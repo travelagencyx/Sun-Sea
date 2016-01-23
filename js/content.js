@@ -1,1 +1,1 @@
-document.write('<h1>Add your HTML code here</h1>');
+document.write('<div class="slider"></div><div class="banner"></div><div class="teaser"></div><div class="about"></div>');
