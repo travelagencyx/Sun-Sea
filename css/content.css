@@ -1,6 +1,91 @@
+.content{
+	background-color:#F4F4F4;
+}
+
 .slider{
 	background-image:url(../img/Plaza_1900_479.jpg);
 	background-repeat: no-repeat;
 	height: 479px;
 	width:100%;
+	margin-bottom:25px;
+}
+
+.banner{
+	display:block;
+	width:1024px;
+	margin:0px auto 25px auto;
+	padding:10px 10px 5px 10px;
+	background-color:#FFF;
+	border:1px solid #ddd;
+}
+
+.bannerBox{
+	width:33%;
+	display: inline-block;
+}
+
+.bannerBoxTitle{
+	text-align: center;
+	font-size: 20px;
+	margin:0 auto;
+	display:table;
+}
+
+.bannerBoxText{
+	text-align: center;
+	margin:5px auto;
+	display:table;
+	color:#767676;
+}
+
+.teaser{
+	display:block;
+	width:1044px;
+	margin:0px auto 25px auto;
+}
+
+.teaserBig{
+	width:45%;
+	display: inline-block;
+	background-image:url(../img/Privatni_smjestaj_500_500.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 480px;
+}
+
+.teaserSmall{
+	width:27%;
+	display: inline-block;
+}
+
+.teaserSmallTopFirst{
+	margin:0 0 20px 20px;
+	background-image:url(../img/NAZIV_400_300.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 260px;
+}
+
+.teaserSmallBottomFirst{
+	margin:0 0 0 20px;
+	background-image:url(../img/Hrvatska-vile_400_300.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 200px;
+}
+
+.teaserSmallTopSecond{
+	margin:0 0 20px 20px;
+	background-image:url(../img/Kuce_400_300.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 260px;
+}
+
+.teaserSmallBottomSecond{
+	margin:0 0 0 20px;
+	background-image:url(../img/Dalmacija_400_300.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 200px;
 }
