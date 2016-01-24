@@ -1,0 +1,13 @@
+.head {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 900;
+  position: relative;
+}
+.wrapper {
+  margin: 15px;
+}
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
