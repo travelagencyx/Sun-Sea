@@ -50,24 +50,28 @@ document.write(`
 					<div class="branchpicOne">
 					</div>
 					<div class="branchtext">
+						<a href=#>Rent a Car</a>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicTwo">
 					</div>
 					<div class="branchtext">
+						<a href=#>Rent a Car</a>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicThree">
 					</div>
 					<div class="branchtext">
+						<a href=#>Rent a Car</a>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicFour">
 					</div>
 					<div class="branchtext">
+						<a href=#>Rent a Car</a>
 					</div>
 				</div>
 			</div>

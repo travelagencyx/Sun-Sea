@@ -138,3 +138,14 @@
 	background-size:cover;
 	height: 151px;
 }
+
+.branchtext{
+	background-color:#FFF;
+	height:100px;
+	padding:10px;
+}
+
+.branchtext a{
+	color:#005687;
+	text-decoration: none;
+}
