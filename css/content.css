@@ -12,7 +12,7 @@
 
 .banner{
 	display:block;
-	width:1024px;
+	max-width:1180px;
 	margin:0px auto 25px auto;
 	padding:10px 10px 5px 10px;
 	background-color:#FFF;
@@ -40,8 +40,8 @@
 
 .teaser{
 	display:block;
-	width:1044px;
-	margin:0px auto 25px auto;
+	width:1200px;
+	margin:0px auto 40px auto;
 }
 
 .teaserBig{
@@ -88,4 +88,53 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 200px;
+}
+
+.bwrapper{
+	background-color:#E2E2E2;
+	width:100%;
+}
+
+.branches{
+	display:block;
+	width:1200px;
+	margin:0px auto 25px auto;
+}
+
+.branchfour{
+	width:282px;
+	margin:20px 0px 20px 20px;
+	display: inline-block;
+}
+
+.branchfour:nth-of-type(1) {
+    margin-left:0px;
+}
+
+.branchpicOne{
+	background-image:url(../img/Top_Kuce_276_151.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 151px;
+}
+
+.branchpicTwo{
+	background-image:url(../img/Dalmacija_276_151.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 151px;
+}
+
+.branchpicThree{
+	background-image:url(../img/Obiteljske_276_151.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 151px;
+}
+
+.branchpicFour{
+	background-image:url(../img/Hrvatski_276_151.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	height: 151px;
 }
