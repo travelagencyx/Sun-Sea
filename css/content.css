@@ -1,3 +1,7 @@
+.padding10{
+	padding:10px;
+}
+
 .content{
 	background-color:#F4F4F4;
 }
@@ -40,7 +44,7 @@
 
 .teaser{
 	display:block;
-	width:1200px;
+	width:1180px;
 	margin:0px auto 40px auto;
 }
 
@@ -97,14 +101,15 @@
 
 .branches{
 	display:block;
-	width:1200px;
+	width:1180px;
 	margin:0px auto 25px auto;
 }
 
 .branchfour{
-	width:282px;
+	width:276px;
 	margin:20px 0px 20px 20px;
 	display: inline-block;
+	background-color:#FFF;
 }
 
 .branchfour:nth-of-type(1) {
@@ -116,6 +121,7 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 151px;
+	position:relative;
 }
 
 .branchpicTwo{
@@ -123,6 +129,7 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 151px;
+	position:relative;
 }
 
 .branchpicThree{
@@ -130,6 +137,7 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 151px;
+	position:relative;
 }
 
 .branchpicFour{
@@ -137,15 +145,42 @@
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 151px;
+	position:relative;
 }
 
-.branchtext{
-	background-color:#FFF;
-	height:100px;
-	padding:10px;
+ul.branchtext{
+	list-style: none;
+	padding-left: 5px;
+	margin:0;
 }
+
+ul.branchtext > li{
+	display:list-item;
+	background-image:url(../img/arrow_left_XS.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding: 0 0 2px 10px;
+}
+
 
 .branchtext a{
 	color:#005687;
 	text-decoration: none;
+}
+
+.branchtext a:hover{
+	color:#FABC67;
+	text-decoration: none;
+}
+
+span.overlay{
+	background:rgba(255,255,255,.8);
+	bottom:0;
+	display:block;
+	z-index:1;
+	padding:10px;
+	width:100%;
+	left:0;
+	color:#f48200;
+	position:absolute;
 }

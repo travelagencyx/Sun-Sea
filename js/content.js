@@ -48,31 +48,56 @@ document.write(`
 			<div class="branches">
 				<div class="branchfour">
 					<div class="branchpicOne">
+						<span class="overlay"><strong>Looking for a rent a car in Croatia?</strong></span>
 					</div>
-					<div class="branchtext">
-						<a href=#>Rent a Car</a>
+					<div class="padding10">
+						<ul class ="branchtext">
+							<li><a href=#>Rent a Car Split</a></li>
+							<li><a href=#>Rent a Car Zadar</a></li>
+							<li><a href=#>Rent a Car Dubrovnik</a></li>
+							<li><a href=#>Rent a Car Zagreb</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicTwo">
+						<span class="overlay"><strong>Looking for a rent a car in Croatia?</strong></span>
 					</div>
-					<div class="branchtext">
-						<a href=#>Rent a Car</a>
+					<div class="padding10">
+						<ul class ="branchtext">
+							<li><a href=#>Rent a Car Split</a></li>
+							<li><a href=#>Rent a Car Zadar</a></li>
+							<li><a href=#>Rent a Car Dubrovnik</a></li>
+							<li><a href=#>Rent a Car Zagreb</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicThree">
+						<span class="overlay"><strong>Looking for a rent a car in Croatia?</strong></span>
 					</div>
-					<div class="branchtext">
-						<a href=#>Rent a Car</a>
+					<div class="padding10">
+						<ul class ="branchtext">
+							<li><a href=#>Rent a Car Split</a></li>
+							<li><a href=#>Rent a Car Zadar</a></li>
+							<li><a href=#>Rent a Car Dubrovnik</a></li>
+							<li><a href=#>Rent a Car Zagreb</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="branchfour">
 					<div class="branchpicFour">
+						<span class="overlay"><strong>Looking for a rent a car in Croatia?</strong></span>
 					</div>
-					<div class="branchtext">
-						<a href=#>Rent a Car</a>
-					</div>
+					<div class="padding10">
+						<ul class ="branchtext">
+							<li><a href=#>Rent a Car Split</a></li>
+							<li><a href=#>Rent a Car Zadar</a></li>
+							<li><a href=#>Rent a Car Dubrovnik</a></li>
+							<li><a href=#>Rent a Car Zagreb</a></li>
+						</ul>
+					</div>				
+				</div>
 				</div>
 			</div>
 		</div>
