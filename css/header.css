@@ -48,6 +48,10 @@ a {
 ul {
   list-style: none;
 }
+ul :hover {
+  color: #f48200;
+  text-decoration: none;
+}
 .menu-item {
   float: left;
   padding: 15px 0;
