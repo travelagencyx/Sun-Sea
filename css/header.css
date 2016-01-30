@@ -46,6 +46,10 @@ ul {
   float: left;
   padding: 15px 0;
 }
+.menu-item :hover {
+  background-color: #005687;
+  color: #fff;
+}
 .menu-item>a {
   border-right: 1px solid #fff;
   color: #333;
