@@ -1,20 +1,19 @@
 .head {
-  display: flex;
+  margin: auto;
+  width: 1180px;
 }
 .logo-wrapper {
   margin-top: 17px;
-  width: 1180px;
-  height: 70px;
+  height: 80px;
   margin-bottom: 17px;
-  margin-left: 25px;
 }
 .header-left {
-  width: 25%;
+  width: 75%;
   float: left;
 }
 .header-right {
-  width: 75%;
-  float: left;
+  width: 25%;
+  float: right;
 }
 #logo {
   width: 150px;
@@ -22,10 +21,10 @@
   top: 5px;
 }
 .list {
-  position: absolute;
-  right: 10px;
+  /* position: absolute;
+  right: 10px; */
   margin-top: 0;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 .list > li {
   display: inline-block;
@@ -68,5 +67,5 @@ li {
 }
 .nav {
   position: absolute;
-  top: 47px;
+  top: 57px;
 }
