@@ -101,7 +101,5 @@ document.write(`
 				</div>
 			</div>
 		</div>
-		<div class="about">
-		</div>
 	</div>
 `);
