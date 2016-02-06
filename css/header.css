@@ -1,69 +1,115 @@
-.head {
-  margin: auto;
-  width: 1180px;
-}
-.logo-wrapper {
-  margin-top: 17px;
-  height: 80px;
-  margin-bottom: 17px;
-}
-.header-left {
-  width: 70%;
-  float: left;
-}
-.header-right {
-  width: 30%;
-  float: right;
+#home {
+  width: 30px;
 }
 #logo {
-  width: 150px;
-  position: absolute;
-  top: 5px;
+  max-width: 200px;
+  width: 100%;
+  height: 70px;
 }
-.list {
-  margin-top: 0;
-  float: right;
+.header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
 }
-.list > li {
-  display: inline-block;
-  padding-right: 10px;
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.marginsInside {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.noSpaces {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.displayBlock {
+  display: block;
+}
+.displayBlock:before, .fixed-tabs:before {
+  content: " ";
+  display: table;
+}
+.displayBlock:after, .fixed-tabs:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.noPadding {
+  padding: 0;
+}
+.paddingSmallTop {
+  padding-top: .313em;
+}
+.paddingBigTop {
+  padding-top: .625em;
+}
+.paddingBigLeft {
+  padding-left: .625em;
+}
+.paddingBigRight {
+  padding-right: 1.25em;
+}
+.text-right {
+  text-align: right;
+}
+.small {
+  font-size: 92%;
+}
+.smallLeft {
+  width: 25%;
+  float: left;
+}
+.bigLeft {
+  width: 75%;
+  float: left;
 }
 a {
   color: #005687;
   text-decoration: none;
 }
-.clearfix {
-  display: block;
+a:hover {
+  color: #f48200;
+  text-decoration: none;
 }
-.menu {
-  position: relative;
+img {
+  vertical-align: middle;
 }
 ul {
   list-style: none;
 }
-ul :hover {
-  color: #f48200;
-  text-decoration: none;
+li {
+  display: list-item;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.inlineblock {
+  display: inline-block;
+}
+.list-inline>li {
+  display: inline-block;
+  padding-right: 6px;
+}
+.menu {
+  position: relative;
 }
 .menu-item {
   float: left;
   padding: 15px 0;
 }
-.menu-item :hover {
-  background-color: #005687;
-  color: #fff;
-}
-.menu-item>a {
-  border-right: 1px solid #fff;
-  color: #333;
+.menu-item > a {
   padding: 10px 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
-li {
-  display: list-item;
-}
-.nav {
-  position: absolute;
-  top: 57px;
+.menu-item:hover > a, .menu-item > .current-menu-item {
+  border-right: 1px solid #fff;
+  background-color: #005687;
+  color: #fff;
+  transition: background .5s ease-in;
 }

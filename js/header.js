@@ -1,48 +1,36 @@
-document.write(`<div class="head">
-  <div class="logo-wrapper">
-    <div>
-      <div class="header-left">
-        <a href="#">
-          <img id="logo" alt="Sun and Sea" src="images/logo.png">
-        </a>
+document.write(`<div class="header">
+  <div class="container">
+    <div class="marginsInside displayBlock paddingSmallTop">
+      <div class="smallLeft">
+          <div class="noPadding" style="line-height:0;">
+              <a href="#" title="Sun and Sea">
+                  <img id="logo" src="img/logo.png">
+              </a>
+          </div>
       </div>
-      <div class="header-right">
-        <ul class="list">
-          <li>
-            <a href="#">Link 1</a>
-          </li>
-          <li>
-            <a href="#">Link 2</a>
-          </li>
-          <li>
-            <a href="#">Link 3</a>
-          </li>
-          <li>
-            <a href="#">Link 4</a>
-          </li>
-          <li>
-            <a href="#">Link 5</a>
-          </li>
+      <div class="bigLeft text-right paddingBigTop small paddingBigRight">
+        <ul class="list-inline inlineblock">
+          <li><a href="#">Link 1</a></li>
+          <li class="paddingBigLeft"><a href="#">Link 2</a></li>
+          <li class="paddingBigLeft"><a href="#">Link 3</a></li>
+          <li class="paddingBigLeft"><a href="#">Link 4</a></li>
+          <li class="paddingBigLeft"><a href="#">Link 5</a></li>
         </ul>
       </div>
     </div>
     <div class="nav">
-      <ul class="menu clearfix menu-images">
+      <ul class="menu displayBlock noSpaces">
         <li class="menu-item">
-          <a href="#">Accomodation</a>
+          <a href="#" class="current-menu-item">
+            <span id="home"><img id="home" src="img/home.png"></span>
+          </a>
         </li>
-        <li class="menu-item">
-          <a href="#">Destinations</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Cruises</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Rent a car</a>
-        </li>
-        <li class="menu-item">
-          <a href="#">Travel services</a>
-        </li>
+        <li class="menu-item"><a href="#">Link 1</a></li>
+        <li class="menu-item"><a href="#">Link 2</a></li>
+        <li class="menu-item"><a href="#">Link 3</a></li>
+        <li class="menu-item"><a href="#">Link 4</a></li>
+        <li class="menu-item"><a href="#">Link 5</a></li>
+        <li class="menu-item"><a href="#">Link 6</a></li>
       </ul>
     </div>
   </div>
