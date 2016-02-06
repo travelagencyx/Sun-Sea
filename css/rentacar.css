@@ -1,0 +1,39 @@
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.contentInside {
+  width: 100%;
+  clear: both;
+  margin: 0 auto;
+}
+.marginBottomSmall {
+  margin-bottom: .625em;
+}
+.paddingLeftSmall {
+  padding-left: .625em;
+}
+.paddingBottomSmall {
+  padding-bottom: .625em;
+}
+.breadcrumb {
+  font-size: 13px;
+  padding-top: 10px;
+  list-style: none;
+  border-radius: 0;
+  color: #767676;
+}
+.breadcrumb>span {
+  display: inline-block;
+}
+.breadcrumb>span+span:before {
+  content: "›› ";
+  padding: 0 5px;
+  color: #767676;
+}
+.first-breadcrumb {
+
+}
+.last-breadcrumb {
+
+}
