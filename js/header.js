@@ -21,11 +21,11 @@ document.write(`<div class="header">
     <div class="nav">
       <ul class="menu displayBlock noSpaces">
         <li class="menu-item">
-          <a href="#" class="current-menu-item">
+          <a href="/" class="current-menu-item">
             <span id="home"><img id="home" src="img/home.png"></span>
           </a>
         </li>
-        <li class="menu-item"><a href="#">Link 1</a></li>
+        <li class="menu-item"><a href="/rentacar">rent a car</a></li>
         <li class="menu-item"><a href="#">Link 2</a></li>
         <li class="menu-item"><a href="#">Link 3</a></li>
         <li class="menu-item"><a href="#">Link 4</a></li>
