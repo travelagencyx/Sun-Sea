@@ -15,28 +15,9 @@
   max-width: 1180px;
   margin: 0 auto;
 }
-.marginsInside {
-  margin-left: -10px;
-  margin-right: -10px;
-}
 .noSpaces {
   margin-bottom: 0;
   padding-left: 0;
-}
-.displayBlock {
-  display: block;
-}
-.displayBlock:before, .fixed-tabs:before {
-  content: " ";
-  display: table;
-}
-.displayBlock:after, .fixed-tabs:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
 }
 .noPadding {
   padding: 0;

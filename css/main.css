@@ -9,3 +9,23 @@ body {
   line-height: 1.45;
   color: #333;
 }
+
+.marginsInside {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.displayBlock {
+  display: block;
+}
+.displayBlock:before, .fixed-tabs:before {
+  content: " ";
+  display: table;
+}
+.displayBlock:after, .fixed-tabs:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}

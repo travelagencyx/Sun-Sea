@@ -31,9 +31,10 @@
   padding: 0 5px;
   color: #767676;
 }
-.first-breadcrumb {
-
-}
-.last-breadcrumb {
-
+.rentacarimage {
+  background-image: url(../img/rentacar.jpg);
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 25px;
 }
