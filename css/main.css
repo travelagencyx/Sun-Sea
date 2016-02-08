@@ -1,7 +1,6 @@
 *{
 	box-sizing: border-box;
 }
-
 body {
   margin:0;
   font-family: "Roboto","Arial","Helvetica",sans-serif;
@@ -9,7 +8,6 @@ body {
   line-height: 1.45;
   color: #333;
 }
-
 .marginsInside {
   margin-left: -10px;
   margin-right: -10px;
@@ -28,4 +26,19 @@ body {
   height: 0;
   line-height: 0;
   visibility: hidden;
+}
+.breadcrumb {
+  font-size: 13px;
+  padding-top: 10px;
+  list-style: none;
+  border-radius: 0;
+  color: #767676;
+}
+.breadcrumb>span {
+  display: inline-block;
+}
+.breadcrumb>span+span:before {
+  content: "›› ";
+  padding: 0 5px;
+  color: #767676;
 }

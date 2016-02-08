@@ -1,0 +1,45 @@
+.teaserBigRestaurants {
+  width:45%;
+  display: inline-block;
+  background-image:url(../img/zrnosoli.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 480px;
+}
+.teaserSmallTopFirst{
+  margin:0 0 20px 20px;
+  background-image:url(../img/restaurant1.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 260px;
+}
+.teaserSmallBottomFirst{
+  margin:0 0 0 20px;
+  background-image:url(../img/restaurant2.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 200px;
+}
+.teaserSmallTopSecond{
+  margin:0 0 20px 20px;
+  background-image:url(../img/restaurant3.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 260px;
+}
+.teaserSmallBottomSecond{
+  margin:0 0 0 20px;
+  background-image:url(../img/restaurant4.jpeg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 200px;
+}
+.textBox {
+  color: #767676;
+}
+.textBoxMiddle {
+  color: #767676;
+  display: table;
+  text-align: center;
+  margin: 5px auto;
+}

@@ -10,11 +10,9 @@ document.write(`<div class="header">
       </div>
       <div class="bigLeft text-right paddingBigTop small paddingBigRight">
         <ul class="list-inline inlineblock">
-          <li><a href="#">Link 1</a></li>
-          <li class="paddingBigLeft"><a href="#">Link 2</a></li>
-          <li class="paddingBigLeft"><a href="#">Link 3</a></li>
-          <li class="paddingBigLeft"><a href="#">Link 4</a></li>
-          <li class="paddingBigLeft"><a href="#">Link 5</a></li>
+          <li class="paddingBigLeft"><a href="#">About Us</a></li>
+          <li class="paddingBigLeft"><a href="#">Contact</a></li>
+          <li class="paddingBigLeft"><a href="#">Change Language</a></li>
         </ul>
       </div>
     </div>
@@ -25,12 +23,10 @@ document.write(`<div class="header">
             <span id="home"><img id="home" src="img/home.png"></span>
           </a>
         </li>
+        <li class="menu-item"><a href="#">accomodation</a></li>
+        <li class="menu-item"><a href="/restaurants">restaurants</a></li>
         <li class="menu-item"><a href="/rentacar">rent a car</a></li>
-        <li class="menu-item"><a href="#">Link 2</a></li>
-        <li class="menu-item"><a href="#">Link 3</a></li>
-        <li class="menu-item"><a href="#">Link 4</a></li>
-        <li class="menu-item"><a href="#">Link 5</a></li>
-        <li class="menu-item"><a href="#">Link 6</a></li>
+        <li class="menu-item"><a href="#">tours</a></li>
       </ul>
     </div>
   </div>

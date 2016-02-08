@@ -16,25 +16,18 @@
 .paddingBottomSmall {
   padding-bottom: .625em;
 }
-.breadcrumb {
-  font-size: 13px;
-  padding-top: 10px;
-  list-style: none;
-  border-radius: 0;
-  color: #767676;
-}
-.breadcrumb>span {
-  display: inline-block;
-}
-.breadcrumb>span+span:before {
-  content: "›› ";
-  padding: 0 5px;
-  color: #767676;
-}
 .rentacarimage {
   background-image: url(../img/rentacar.jpg);
   background-repeat: no-repeat;
   height: 400px;
   width: 100%;
   margin-bottom: 25px;
+}
+.sliderCars {
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2px;
 }

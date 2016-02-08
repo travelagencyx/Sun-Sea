@@ -8,6 +8,9 @@ app.get('/', function (req, res) {
 app.get('/rentacar', function (req, res) {
   res.sendFile(__dirname + '/rentacar.html');
 });
+app.get('/restaurants', function (req, res) {
+  res.sendFile(__dirname + '/restaurants.html');
+});
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');

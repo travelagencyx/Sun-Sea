@@ -28,6 +28,9 @@ document.write(`<div class="content">
           our work and labor are appreciated in Croatia and also on the global
           market.<br/><br/>
         </div>
+        <div class="sliderCars">
+          CAROUSEL
+        </div>
       </div>
     </div>
   </div>
