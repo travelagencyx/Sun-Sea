@@ -24,17 +24,22 @@ document.write(`<div class="content">
         </div>
         <div class="teaser">
           <div class="teaserBigRestaurants">
+            <span class="overlay"><strong>Zrno Soli</strong></span>
           </div>
           <div class="teaserSmall">
             <div class="teaserSmallTopFirst">
+              <span class="overlay"><strong>Restaurant 2</strong></span>
             </div>
             <div class="teaserSmallBottomFirst">
+              <span class="overlay"><strong>Restaurant 3</strong></span>
             </div>
           </div>
           <div class="teaserSmall">
             <div class="teaserSmallTopSecond">
+              <span class="overlay"><strong>Restaurant 4</strong></span>
             </div>
             <div class="teaserSmallBottomSecond">
+              <span class="overlay"><strong>Restaurant 5</strong></span>
             </div>
           </div>
         </div>

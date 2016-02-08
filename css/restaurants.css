@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 480px;
+  position: relative;
 }
 .teaserSmallTopFirst{
   margin:0 0 20px 20px;
@@ -12,6 +13,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 260px;
+  position: relative;
 }
 .teaserSmallBottomFirst{
   margin:0 0 0 20px;
@@ -19,6 +21,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 200px;
+  position: relative;
 }
 .teaserSmallTopSecond{
   margin:0 0 20px 20px;
@@ -26,6 +29,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 260px;
+  position: relative;
 }
 .teaserSmallBottomSecond{
   margin:0 0 0 20px;
@@ -33,6 +37,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   height: 200px;
+  position: relative;
 }
 .textBox {
   color: #767676;
