@@ -77,9 +77,9 @@
   color: #fff;
   z-index: 1;
   top: 0;
-  padding: 30px;
+  bottom: 0;
   text-align: left;
-  background: rgba(0,86,135,.8);;
+  background: rgba(51,51,51,.8);
   box-sizing: border-box;
 }
 .teaserBigRestaurants:before {
@@ -90,7 +90,7 @@
   top: 0;
   padding: 100px;
   text-align: left;
-  background: rgba(0,86,135,.8);;
+  background: rgba(51,51,51,.8);
   box-sizing: border-box;
 }
 .teaserBigRestaurants:hover:after, .teaserBigRestaurants:hover:before,
