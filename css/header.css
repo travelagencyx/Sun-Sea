@@ -2,9 +2,9 @@
   width: 30px;
 }
 #logo {
-  max-width: 200px;
+  max-width: 300px;
   width: 100%;
-  height: 70px;
+  height: 80px;
 }
 .header {
   background: #fff;
@@ -49,12 +49,12 @@
   float: left;
 }
 a {
-  color: #005687;
+  color: #737075;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover {
-  color: #f48200;
+  color: #272628;
   text-decoration: none;
 }
 img {
@@ -85,13 +85,14 @@ li {
   padding: 15px 0;
 }
 .menu-item > a {
+  color: #737075;
   border-right: 1px solid #fff;
   padding: 10px 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.menu-item:hover > a, .menu-item > .current-menu-item { 
-  background-color: #005687;
+.menu-item:hover > a, .menu-item > .current-menu-item {
+  background-color: #733592;
   color: #fff;
   transition: background .5s ease-in;
 }

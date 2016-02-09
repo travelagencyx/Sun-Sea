@@ -161,12 +161,12 @@ ul.branchtext > li{
 
 
 .branchtext a{
-	color:#005687;
+	color:#737075;
 	text-decoration: none;
 }
 
 .branchtext a:hover{
-	color:#f48200;
+	color:#272628;
 	text-decoration: none;
 }
 
@@ -178,6 +178,6 @@ span.overlay{
 	padding:10px;
 	width:100%;
 	left:0;
-	color:#f48200;
+	color:#733592;
 	position:absolute;
 }
