@@ -42,3 +42,15 @@ body {
   padding: 0 5px;
   color: #767676;
 }
+.paddingLeftSmall {
+  padding-left: .625em;
+}
+.marginBottomSmall {
+  margin-bottom: .625em;
+}
+.paddingBottomSmall {
+  padding-bottom: .625em;
+}
+.padding10{
+  padding:10px;
+}

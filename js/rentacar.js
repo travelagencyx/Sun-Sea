@@ -12,7 +12,7 @@ document.write(`<div class="content">
     </div>
     <div class="contentInside paddingBottomSmall">
       <h1>Rent a car</h1>
-      <div class="marginsInside displayBlock">
+      <div class="displayBlock">
         <div class="rentacarimage"></div>
         <div>
           More then 10 years, fleet of more than 1000 cars, more than 100 000

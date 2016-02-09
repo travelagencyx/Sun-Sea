@@ -7,15 +7,7 @@
   clear: both;
   margin: 0 auto;
 }
-.marginBottomSmall {
-  margin-bottom: .625em;
-}
-.paddingLeftSmall {
-  padding-left: .625em;
-}
-.paddingBottomSmall {
-  padding-bottom: .625em;
-}
+
 .rentacarimage {
   background-image: url(../img/rentacar.jpg);
   background-repeat: no-repeat;

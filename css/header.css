@@ -85,12 +85,12 @@ li {
   padding: 15px 0;
 }
 .menu-item > a {
+  border-right: 1px solid #fff;
   padding: 10px 15px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.menu-item:hover > a, .menu-item > .current-menu-item {
-  border-right: 1px solid #fff;
+.menu-item:hover > a, .menu-item > .current-menu-item { 
   background-color: #005687;
   color: #fff;
   transition: background .5s ease-in;
