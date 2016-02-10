@@ -6,14 +6,33 @@ document.write(`<div class="content">
           <a href="/"><span>Home</span></a>
         </span>
         <span class="last-breadcrumb">
-          <span>Accomodation</span>
+          <span>Accommodation</span>
         </span>
       </div>
     </div>
     <div class="contentInside paddingBottomSmall">
-      <h1>Accomodation</h1>
-      <div class="marginsInside displayBlock">
-
+      <h1>Accommodation</h1>
+      <div class="displayBlock">
+		<div class="accommodationimage"></div>
+		<div class="banner">
+            <div>
+                <span class="textBoxMiddle">
+					Stay in one of our apartements located in heart of Split - Diocletian Palace.
+                </span>
+            </div>
+        </div>
+        <div class="width33">
+			
+        </div>
+		<div class="width33">
+          
+        </div>
+		<div class="width33">
+          
+        </div>
+        <div class="sliderCars">
+          CAROUSEL
+        </div>
       </div>
     </div>
   </div>
