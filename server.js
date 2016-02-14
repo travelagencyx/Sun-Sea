@@ -14,6 +14,9 @@ app.get('/rentacar', function (req, res) {
 app.get('/restaurants', function (req, res) {
   res.sendFile(__dirname + '/restaurants.html');
 });
+app.get('/zrnosoli', function (req, res) {
+  res.sendFile(__dirname + '/restaurant_details.html');
+});
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');
 });

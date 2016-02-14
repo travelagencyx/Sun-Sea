@@ -1,0 +1,17 @@
+.teaserBigRestaurant{
+  width:45%;
+  display: inline-block;
+  background-image:url(../img/zrnosolimain.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 480px;
+}
+.restaurantInfoBox {
+  width:50%;
+  display: inline-block;
+  height: 480px;
+  padding: 10px 10px 5px 10px;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  float: right;
+}
