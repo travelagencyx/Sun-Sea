@@ -54,3 +54,7 @@ body {
 .padding10{
   padding:10px;
 }
+
+.clear{
+  clear:both;
+}

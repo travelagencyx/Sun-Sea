@@ -1,11 +1,12 @@
-.accommodationimage {
-  background-image: url(../img/splitpanoramic.jpg);
+..accommodationcarousel {    
+  background-image: url(../img/apartment1/44367954.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
   width: 100%;
   margin-bottom: 25px;
-}
+  transition: opacity 1s;
+} 
 
 .textBoxMiddle {
   color: #767676;
@@ -39,6 +40,18 @@
 .accommodationheadline{
   font-size: 1.5em;
   color:#733592;
+  float:left;
+}
+
+.price{
+  font-size: 1.5em;
+  color:#00b300;
+  float:right;
+}
+
+.pernight{
+  font-size: 0.5em;
+  color:#00b300;
 }
 
 .threestars{
@@ -57,6 +70,7 @@
   height: 20px;
   content: "";
   float:left;
+  margin-right: 10px;
 }
 
 .persons{
@@ -69,7 +83,30 @@
   color:#767676;
 }
 
+.centerdistance:before{
+  background-image: url(../img/centericon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  content: "";
+  float:left;
+  margin-right: 10px;
+}
+
 .seadistance{
   margin-top: 10px;
   color:#767676;
 }
+
+.seadistance:before{
+  background-image: url(../img/seaicon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  content: "";
+  float:left;
+  margin-right: 10px;
+}
+
