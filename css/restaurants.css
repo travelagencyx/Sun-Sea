@@ -53,50 +53,45 @@
   text-align: center;
   margin: 5px auto;
 }
-.teaserBigRestaurants:after, .teaserBigRestaurants:before,
-.teaserSmallTopFirst:after, .teaserSmallTopFirst:before,
-.teaserSmallBottomFirst:after, .teaserSmallBottomFirst:before,
-.teaserSmallTopSecond:after, .teaserSmallTopSecond:before,
-.teaserSmallBottomSecond:after, .teaserSmallBottomSecond:before {
-  position:absolute;
+.maskContent {
   opacity:0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  text-shadow: 2px 2px #000;
 }
-.teaserBigRestaurants:after,
-.teaserSmallTopFirst:after, .teaserSmallBottomFirst:after,
-.teaserSmallTopSecond:after, .teaserSmallBottomSecond:after{
-  width:100%; height:100%;
-  top:0; left:0;
-  background:rgba(0,0,0,0.6);
+.teaserBigRestaurants:hover .maskContent,
+.teaserSmallTopFirst:hover .maskContent,
+.teaserSmallBottomFirst:hover .maskContent,
+.teaserSmallTopSecond:hover .maskContent,
+.teaserSmallBottomSecond:hover .maskContent {
+  opacity:1;
 }
-.teaserSmallTopFirst:before, .teaserSmallBottomFirst:before,
-.teaserSmallTopSecond:before, .teaserSmallBottomSecond:before {
-  content: attr(data-content);
+.mask {
+  display: block;
   width: 100%;
   color: #fff;
-  z-index: 1;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background: rgba(115,53,146, 0);
   top: 0;
   bottom: 0;
-  text-align: left;
-  background: rgba(51,51,51,.8);
-  box-sizing: border-box;
+  position: absolute;
+  transition: all 1s;
+  -webkit-transition: all 1s;
 }
-.teaserBigRestaurants:before {
-  content: attr(data-content);
-  width: 100%;
+.teaserBigRestaurants:hover .mask,
+.teaserSmallTopFirst:hover .mask,
+.teaserSmallBottomFirst:hover .mask,
+.teaserSmallTopSecond:hover .mask,
+.teaserSmallBottomSecond:hover .mask {
+  background: rgba(138,43,226, .2);
   color: #fff;
-  z-index: 1;
-  top: 0;
-  padding: 100px;
-  text-align: left;
-  background: rgba(51,51,51,.8);
-  box-sizing: border-box;
 }
-.teaserBigRestaurants:hover:after, .teaserBigRestaurants:hover:before,
-.teaserSmallTopFirst:hover:after, .teaserSmallTopFirst:hover:before,
-.teaserSmallBottomFirst:hover:after, .teaserSmallBottomFirst:hover:before,
-.teaserSmallTopSecond:hover:after, .teaserSmallTopSecond:hover:before,
-.teaserSmallBottomSecond:hover:after, .teaserSmallBottomSecond:hover:before {
-  opacity:1;
+.reviewHeadline {
+  font-family: Georgia,"Times New Roman","Century Schoolbook L",serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
 }
