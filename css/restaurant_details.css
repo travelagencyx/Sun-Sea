@@ -1,3 +1,15 @@
+.titleRestaurant {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #733592;
+  padding: 10px 20px 10px 20px;
+}
+.addressRestaurant {
+  background-color: #F4F4F4;
+  padding: 10px 20px 10px 20px;
+  border: 2px #733592 solid;
+}
 .teaserBigRestaurant{
   width:45%;
   display: inline-block;
@@ -9,9 +21,26 @@
 .restaurantInfoBox {
   width:50%;
   display: inline-block;
-  height: 480px;
-  padding: 10px 10px 5px 10px;
+  /*height: 480px;*/
   background-color: #FFF;
   border: 1px solid #ddd;
   float: right;
+}
+.innerBox {
+  padding: 10px 20px 10px 20px;
+}
+.icon {
+  background-repeat: no-repeat;
+  width:25px;
+  height:25px;
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
+.paddingTop {
+  padding-top:10px;
+}
+.text {
+  padding-left: 10px;
 }
