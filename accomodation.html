@@ -10,42 +10,16 @@
       <link rel="stylesheet" type="text/css" href="css/carousel.css">
       <link rel="stylesheet" type="text/css" href="css/footer.css">
    </head>
-   <body onload="slidingImages()">
+   <body>
       <script src="js/header.js"></script>
       <script src="js/accomodation.js"></script>
       <script src="js/footer.js"></script>
       <script src="js/carousel.js"></script>
       <script type="text/javascript">
-         //Fade out function
-         function fadeout(){
-            document.querySelector('.accommodationcarousel').style.opacity = 0;
-         }
-         //Create images Array
-         var imgArr = new Array("url(../img/apartment1/44367954.jpg)",
+         carouselModule.init([["url(../img/apartment1/44367954.jpg)",
                     "url(../img/apartment1/44367957.jpg)",
-                    "url(../img/apartment1/44367958.jpg)");
-
-         var count = imgArr.length; // assign images array length
-         var position = 0; //position is set to zero
-
-         function slidingImages() {
-            if ( document.images ) {
-                if ( position < count ) {
-                    imageSrc(position); // call the image source
-                    position += 1;
-                } else {
-                    imageSrc(0);
-                    position = 1;
-                }
-            }
-            setTimeout(fadeout, 4500);
-            setTimeout(slidingImages, 5000);
-         }
-
-         function imageSrc(position) {
-            document.querySelector('.accommodationcarousel').style.backgroundImage  = imgArr[position];
-            document.querySelector('.accommodationcarousel').style.opacity = 1;
-         }
+                    "url(../img/apartment1/44367958.jpg)"], 'accommodationcarousel']);
+		 carouselModule.slidingImages();
     </script>
    </body>
 </html>
