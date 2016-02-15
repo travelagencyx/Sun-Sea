@@ -1,6 +1,6 @@
 document.write(`
 	<div class="content">
-		<div class="slider">
+		<div class="homeCarousel">
 		</div>
 		<div class="banner">
 			<div class="bannerBox">
