@@ -8,7 +8,8 @@ function initialize() {
       var myLatlng = new google.maps.LatLng(latitude, longitude);
       var myOptions = {
         zoom: 15,
-        center: myLatlng
+        center: myLatlng,
+        scrollwheel: false
       }
       var map = new google.maps.Map(document.getElementById("map"), myOptions);
       var marker = new google.maps.Marker({
