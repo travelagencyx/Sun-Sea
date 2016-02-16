@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Apartment Skalice",
+	  "picture": "../img/apartment1/44368087.jpg",
+	  "price": "100",
+	  "categorization": "../img/apartment1/threestars.gif",
+	  "persons": "2-4",
+	  "citydistance": "500",
+	  "seadistance": "1000m"
+    },
+    {
+      "id": 2,
+      "name": "Apartment Skalice",
+	  "picture": "../img/apartment1/44368087.jpg",
+	  "price": "100",
+	  "categorization": "../img/apartment1/threestars.gif",
+	  "persons": "2-4",
+	  "citydistance": "500",
+	  "seadistance": "1000m"
+    },
+    {
+      "id": 3,
+      "name": "Apartment Skalice",
+	  "picture": "../img/apartment1/44368087.jpg",
+	  "price": "100",
+	  "categorization": "../img/apartment1/threestars.gif",
+	  "persons": "2-4",
+	  "citydistance": "500",
+	  "seadistance": "1000m"
+    },
+    {
+      "id": 4,
+      "name": "Apartment Skalice",
+	  "picture": "../img/apartment1/44368087.jpg",
+	  "price": "100",
+	  "categorization": "../img/apartment1/threestars.gif",
+	  "persons": "2-4",
+	  "citydistance": "500",
+	  "seadistance": "1000m"
+    },
+    {
+      "id": 5,
+      "name": "Apartment Skalice",
+	  "picture": "../img/apartment1/44368087.jpg",
+	  "price": "100",
+	  "categorization": "../img/apartment1/threestars.gif",
+	  "persons": "2-4",
+	  "citydistance": "500",
+	  "seadistance": "1000m"
+    }
+  ]
+}

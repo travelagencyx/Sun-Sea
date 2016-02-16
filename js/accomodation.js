@@ -23,8 +23,10 @@ document.write(`
           </div>
         </div>
         <div class="width33">
-    			<div class="galleryaccommodation">
-          </div>
+		  <a href="/apartmentSkalice">
+    		 <div class="galleryaccommodation">
+			 </div>
+		  </a>
           <div class="accommodationinfo">
             <div class="accommodationheadline">Apartment Skalice</div><div class="price">100 €<span class="pernight"> / per night</span></div>
             <hr class="clear">
