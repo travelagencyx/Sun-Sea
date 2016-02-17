@@ -44,3 +44,14 @@
 .text {
   padding-left: 10px;
 }
+.paddingBottom {
+  padding-bottom: 25px;
+}
+.sliderFood {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2px;
+}
