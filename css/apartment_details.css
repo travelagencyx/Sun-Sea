@@ -1,46 +1,73 @@
-.titleRestaurant {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #733592;
-  padding: 10px 20px 10px 20px;
-}
-.addressRestaurant {
-  background-color: #F4F4F4;
-  padding: 10px 20px 10px 20px;
-  border: 2px #733592 solid;
-}
 .apartmentCarousel{
-  width:45%;
+  width:65%;
   display: inline-block;
   background-repeat: no-repeat;
   background-size:cover;
   height: 480px;
   transition: opacity 1s;
 }
-.restaurantInfoBox {
-  width:50%;
+.apartmentSearchbox{
+  width:30%;
   display: inline-block;
   /*height: 480px;*/
   background-color: #FFF;
   border: 1px solid #ddd;
   float: right;
 }
-.innerBox {
-  padding: 10px 20px 10px 20px;
+
+.searchboxHeadline{
+  height:30px;
+  background-color: #FFF;
+  padding: 10px 10px 40px 10px;
+  background: rgba(115,53,146, 1);
+  font-weight: bold;
+  color: #fff;
 }
-.icon {
-  background-repeat: no-repeat;
-  width:25px;
-  height:25px;
-  float: left;
+
+.searchboxPrice{
+  font-size: 1.75em;
+  float:left;
+  height: auto;
 }
-.clearfix {
-  clear: both;
+
+.searchboxPerNight{
+  font-size: 1em;
+  float:right;
+  padding:10px 10px 0 0;
 }
-.paddingTop {
-  padding-top:10px;
+
+.searchboxSelection{
+  height:auto;
+  padding: 10px 0;
 }
-.text {
-  padding-left: 10px;
+
+.checkIn{
+	width:40%;
+	float:left;
+	padding: 5px 5px 5px 10px;
+}
+
+.checkOut{
+	width:40%;
+	float:left;
+	padding: 5px;
+}
+
+.guests{
+	width:20%;
+	float:left;
+	padding: 5px 10px 5px 5px;
+}
+
+.guestsDropdown{
+    width:100%;
+	padding: 0.5em;
+}
+
+.chkTitle{
+  padding:10px 0 10px 0;
+}
+
+.calculateTable{
+  clear:both;
 }

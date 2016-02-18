@@ -10,6 +10,8 @@
       <link rel="stylesheet" type="text/css" href="css/apartment_details.css">
       <link rel="stylesheet" type="text/css" href="css/footer.css">
 	  <link rel="stylesheet" type="text/css" href="css/carousel.css">
+	  <link rel="stylesheet" type="text/css" href="css/external/site.css">
+	  <link rel="stylesheet" type="text/css" href="css/external/pikaday.css">
    </head>
    <body>
       <script src="js/header.js"></script>
@@ -34,85 +36,44 @@
                <div class="teaser">
                   <div class="apartmentCarousel">
                   </div>
-                  <div class="restaurantInfoBox">
-                     <div class="titleRestaurant">Apartment Skalice</div>
-                     <div class="addressRestaurant">
-                        <div>
-                           <span class="icon"><img src="img/address.png"></span>
-                           <span class="text">
-                              Uvala Baluni 8 - Aci marina, Split
-                           </span>
-                        </div>
-                        <div class="paddingTop">
-                           <span class="icon"><img src="img/phone.png"></span>
-                           <span class="text">
-                              <i>Phone:</i> 00385/21-399-333&nbsp;&nbsp;
-                              <i>Mob:</i> 00385/91-561-2284&nbsp;&nbsp;
-                              <i>Fax:</i> 00385/21-567-757
-                           </span>
-                        </div>
-                        <div class="paddingTop">
-                           <span class="icon"><img src="img/web.png"></span>
-                           <span class="text">
-                              www.zrnosoli.hr
-                           </span>
-                        </div>
-                     </div>
-                     <div class="innerBox">
-                        <div class="paddingTop">
-                           <span class="icon"><img src="img/food.png"></span>
-                           <span class="text">
-                              <i>Type of Food:</i>
-                              Mediterranean, Traditional, Fish
-                           </span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon"><img src="img/chef.png"></span>
-                           <span class="text"><i>Chef:</i> Marko Vrdoljak</span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon">
-                              <img src="img/clockrest.png">
-                           </span>
-                           <span class="text">
-                              <i>Working Hours:</i> 8 - 24
-                           </span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon"><img src="img/chair.png"></span>
-                           <span class="text">
-                              <i>Capacity:</i> Indoor - 50 Outdoor - 70
-                           </span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon">
-                              <img src="img/reservation.png">
-                           </span>
-                           <span class="text"><i>Reservations:</i> Yes</span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon">
-                              <img src="img/payment.png">
-                           </span>
-                           <span class="text">
-                              <i>Payment:</i> cash, credit card
-                           </span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon">
-                              <img src="img/wireless.png">
-                           </span>
-                           <span class="text"><i>Wireless:</i> Yes</span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon"><img src="img/parking.png"></span>
-                           <span class="text"><i>Parking:</i> Yes</span>
-                        </div>
-                        <div class="clearfix paddingTop">
-                           <span class="icon"><img src="img/dog.png"></span>
-                           <span class="text">Pets allowed on terrace</span>
-                        </div>
-                     </div>
+                  <div class="apartmentSearchbox">
+					<div class="searchboxHeadline">
+						 <div class="searchboxPrice">
+						 100 €
+						 </div>
+						 <div class="searchboxPerNight">
+						 Per Night
+						 </div>
+					 </div>
+                     <div class="searchboxSelection clear">
+						<div class="checkIn">
+							<div class="chkTitle">Check In</div>
+							<input type="text" class="date-picker">
+						</div>
+						<div class="checkOut">
+							<div class="chkTitle">Check Out</div>
+							<input type="text" class="date-picker">
+						</div>
+						<div class="guests">
+							<div class="chkTitle">Guests</div>
+							<select class="guestsDropdown">
+							 <option value="1">1</option>
+							 <option value="2">2</option>
+							 <option value="3">3</option>
+							 <option value="4">4</option>
+							</select>
+						</div>
+						<div class="calculateTable">
+							<div class="priceXduration">
+							</div>
+							<div class="servicesPrice">
+							</div>
+							<div class="totalPrice">
+							</div>
+						</div>
+					 </div>
+					 <div class="searchboxButton">
+					 </div>
                   </div>
                </div>
              </div>
@@ -122,7 +83,14 @@
 
       <script src="js/footer.js"></script>
 	  <script src="js/carousel.js"></script>
+	  <script src="js/external/pikaday.js"></script>
       <script type="text/javascript">
+		 var eleGroup = document.querySelectorAll('.date-picker');
+		 for(x in eleGroup) {
+			if(eleGroup.hasOwnProperty(x)) {
+				new Pikaday({ field: eleGroup[x] });
+			}
+		}
          carouselModule.init([["url(../img/apartment1/44367954.jpg)",
                     "url(../img/apartment1/44367957.jpg)",
                     "url(../img/apartment1/44367958.jpg)"], 'apartmentCarousel']);
