@@ -47,13 +47,28 @@ var carouselModule = (function (){
 		_carouselSelector.style.opacity = 1;
 	}
 
+	function setPosition(position){
+		if(position == 4 || position == 0){
+				position = 3;
+			}else{
+				position -= 1;
+			};
+	}
+
+
 	function registerEvents(){
 		//_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(fadetimeout);});
 		//_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(slidetimeout);});	
 		//_carouselSelector.addEventListener("mouseout", function(){ fadetimeout = setTimeout(fadeout, 5500);});
 		//_carouselSelector.addEventListener("mouseout", function(){ slidetimeout = setTimeout(slidingImages, 6000);});
 		rightArrow.addEventListener("click", function(){ clearTimeout(fadetimeout); clearTimeout(slidetimeout); fadeout(); slidingImages(); });
-		leftArrow.addEventListener("click", function(){ clearTimeout(fadetimeout); clearTimeout(slidetimeout); if(position = 0){position = _count;}else{position -= 1;}; slidingImages()});
+		leftArrow.addEventListener("click", function(){ 
+			clearTimeout(fadetimeout); 
+			clearTimeout(slidetimeout); 
+			setPosition(position);
+			fadeout();
+			slidingImages();
+		});
 	}
 
 	return{
