@@ -5,8 +5,22 @@ var carouselModule = (function (){
 	var _count = 0;
 	var fadetimeout;
 	var slidetimeout;
+	var leftArrow;
+	var rightArrow;
+
 	
-	
+	function appendArrows() {
+		leftArrow = document.createElement("button");
+		rightArrow = document.createElement("button");
+		leftArrow.classList.add("left");
+		leftArrow.classList.add("arrow");
+		rightArrow.classList.add("right");
+		rightArrow.classList.add("arrow");
+		_carouselSelector.appendChild(leftArrow);
+		_carouselSelector.appendChild(rightArrow);
+	}
+
+
 	//Fade out function
 	function fadeout(){
 		_carouselSelector.style.opacity = 0;
@@ -32,8 +46,15 @@ var carouselModule = (function (){
 		_carouselSelector.style.backgroundImage  = _imgArr[position];
 		_carouselSelector.style.opacity = 1;
 	}
-	
-	
+
+	function registerEvents(){
+		//_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(fadetimeout);});
+		//_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(slidetimeout);});	
+		//_carouselSelector.addEventListener("mouseout", function(){ fadetimeout = setTimeout(fadeout, 5500);});
+		//_carouselSelector.addEventListener("mouseout", function(){ slidetimeout = setTimeout(slidingImages, 6000);});
+		rightArrow.addEventListener("click", function(){ clearTimeout(fadetimeout); clearTimeout(slidetimeout); fadeout(); slidingImages(); });
+		leftArrow.addEventListener("click", function(){ clearTimeout(fadetimeout); clearTimeout(slidetimeout); if(position = 0){position = _count;}else{position -= 1;}; slidingImages()});
+	}
 
 	return{
 	//First argument - array of images; Second argument - carousel class example: 'accommodationcarousel'
@@ -42,10 +63,8 @@ var carouselModule = (function (){
 		_imgArr = _args[0];
 		_carouselSelector = document.querySelector('.' + _args[1]);
 		_count = _imgArr.length; // assign images array length
-		_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(fadetimeout);});
-		_carouselSelector.addEventListener("mouseover", function(){ clearTimeout(slidetimeout);});	
-		_carouselSelector.addEventListener("mouseout", function(){ fadetimeout = setTimeout(fadeout, 5500);});
-		_carouselSelector.addEventListener("mouseout", function(){ slidetimeout = setTimeout(slidingImages, 6000);});
+		appendArrows();
+		registerEvents();
 		},
 		slidingImages: slidingImages
 	};

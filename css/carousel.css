@@ -1,0 +1,64 @@
+button {
+  -webkit-appearance: none;
+  background-color:rgba(0, 0, 0, 0.3);
+  border: 0;
+  outline:0;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover{
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
+svg {
+  padding: 5px;
+}
+
+.arrow {
+  cursor: pointer;
+  width: 70px;
+  height: 90px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve"><polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/></svg>');
+  background-repeat: no-repeat;
+  background-size:cover;
+  float:left;
+  margin-left: 10px;
+}
+
+.right {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve"><polyline fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/></svg>');
+  background-repeat: no-repeat;
+  background-size:cover;
+  float: right;
+  margin-right: 10px;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+  stroke-width: 3;
+}
+
+.left:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+  stroke-width: 3;
+}
+
+.right:active polyline {
+  stroke-width: 6;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
