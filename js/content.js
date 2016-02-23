@@ -5,42 +5,47 @@ document.write(`
 		<div class="banner">
 			<div class="bannerBox">
 				<span class="bannerBoxTitle">
-				Vaš specijalist za odmor od 2001
+				Relax and enjoy
 				</span>
 				<span class="bannerBoxText">
-				Više od 200 000 zadovoljnih gostiju
+				Experience Dalmatia region like never before
 				</span>
 			</div>
 			<div class="bannerBox">
 				<span class="bannerBoxTitle">
-				Garancija kvalitete
+				Everything in one place
 				</span>
 				<span class="bannerBoxText">
-				Radimo direktno sa iznajmljivačima
+				Accommodation, restaurants, tours and transportation
 				</span>
 			</div>
 			<div class="bannerBox">
 				<span class="bannerBoxTitle">
-				Poslovnice na Jadranskoj obali
+				We are in heart of Split
 				</span>
 				<span class="bannerBoxText">
-				Split, Rogoznica, Vodice, Budva
+				Our office is 100 meters away from Diocletian's palace
 				</span>
 			</div>
 		</div>
 		<div class="teaser">
 			<div class="teaserBig">
+				<span class="overlay"><strong>Rent and stay in accommodation we offer</strong></span>
 			</div>
 			<div class="teaserSmall">
 				<div class="teaserSmallTopFirst">
+					<span class="overlaySmall"><strong>Don't miss out Tours</strong></span>
 				</div>
 				<div class="teaserSmallBottomFirst">
+					<span class="overlaySmall"><strong>Need to Rent a car?</strong></span>
 				</div>
 			</div>
 			<div class="teaserSmall">
 				<div class="teaserSmallTopSecond">
+					<span class="overlaySmall"><strong>Let us recommend best places to eat</strong></span>
 				</div>
 				<div class="teaserSmallBottomSecond">
+					<span class="overlaySmall"><strong>Looking for adventure?</strong></span>
 				</div>
 			</div>
 		</div>
@@ -48,7 +53,7 @@ document.write(`
 			<div class="branches">
 				<div class="branchfour">
 					<div class="branchpicOne">
-						<span class="overlay"><strong>Looking for a rent a car in Croatia?</strong></span>
+						<span class="overlay"><strong>Places to stay</strong></span>
 					</div>
 					<div class="padding10">
 						<ul class ="branchtext">
