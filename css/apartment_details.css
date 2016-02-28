@@ -90,13 +90,12 @@
 }
 
 .searchButton{
-
-	background-image: -moz-linear-gradient(top, #BA55D3 0%, #733592 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BA55D3), color-stop(100%, #733592));
-	background-image: -webkit-linear-gradient(top, #BA55D3 0%, #733592 100%);
-	background-image: -o-linear-gradient(top, #BA55D3 0%, #733592 100%);
-	background-image: -ms-linear-gradient(top, #BA55D3 0%, #733592 100%);
-	background-image: linear-gradient(to bottom, #BA55D3 0%, #733592 100%);
+	background-image: -moz-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7BDBEB), color-stop(100%, #0000cd));
+	background-image: -webkit-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -o-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -ms-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: linear-gradient(to bottom, #7BDBEB 0%, #0000cd 100%);
 	border: 0.5px solid #4B0082;
 	border-radius: 5px;	
 	height: 50px;
@@ -108,12 +107,12 @@
 }
 
 .searchButton:hover {
-	background-image: -moz-linear-gradient(top, #BA55D3 0%, #4B0082 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BA55D3), color-stop(100%, #4B0082));
-	background-image: -webkit-linear-gradient(top, #BA55D3 0%, #4B0082 100%);
-	background-image: -o-linear-gradient(top, #BA55D3 0%, #4B0082 100%);
-	background-image: -ms-linear-gradient(top, #BA55D3 0%, #4B0082 100%);
-	background-image: linear-gradient(to bottom, #BA55D3 0%, #4B0082 100%);
+	background-image: -moz-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #7BDBEB), color-stop(50%, #0000cd));
+	background-image: -webkit-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -o-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -ms-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: linear-gradient(to bottom, #7BDBEB 0%, #0000cd 50%);
 }
 
 .searchButton:active {

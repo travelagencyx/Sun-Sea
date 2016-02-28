@@ -8,6 +8,16 @@
   transition: opacity 1s;
 } 
 
+.textBox {
+  color: #767676;
+  display:block;
+  max-width:1180px;
+  margin:0px auto 25px auto;
+  padding:10px 10px 5px 10px;
+  background-color:#FFF;
+  border:1px solid #ddd;
+}
+
 .textBoxMiddle {
   color: #767676;
   display: table;

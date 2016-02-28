@@ -13,7 +13,7 @@ document.write(`
 			</div>
 			<div class="bannerBox">
 				<span class="bannerBoxTitle">
-				Everything in one place
+				Find here all you need
 				</span>
 				<span class="bannerBoxText">
 				Accommodation, restaurants, tours and transportation
@@ -24,29 +24,39 @@ document.write(`
 				We are in heart of Split
 				</span>
 				<span class="bannerBoxText">
-				Our office is 100 meters away from Diocletian's palace
+				Office is 100 meters away from Diocletian's palace
 				</span>
 			</div>
 		</div>
 		<div class="teaser">
-			<div class="teaserBig">
-				<span class="overlay"><strong>Rent and stay in accommodation we offer</strong></span>
+			<a href="/accomodation">
+				<div class="teaserBig">
+					<span class="overlay"><strong>Rent and stay in accommodation we offer</strong></span>
+				</div>
+			</a>
+			<div class="teaserSmall">
+				<a href="/tours">
+					<div class="teaserSmallTopFirst">
+						<span class="overlaySmall"><strong>Don't miss out Tours</strong></span>
+					</div>
+				</a>
+				<a href="/rentacar">
+					<div class="teaserSmallBottomFirst">
+						<span class="overlaySmall"><strong>Need to Rent a car?</strong></span>
+					</div>
+				</a>
 			</div>
 			<div class="teaserSmall">
-				<div class="teaserSmallTopFirst">
-					<span class="overlaySmall"><strong>Don't miss out Tours</strong></span>
-				</div>
-				<div class="teaserSmallBottomFirst">
-					<span class="overlaySmall"><strong>Need to Rent a car?</strong></span>
-				</div>
-			</div>
-			<div class="teaserSmall">
+				<a href="/restaurants">
 				<div class="teaserSmallTopSecond">
 					<span class="overlaySmall"><strong>Let us recommend best places to eat</strong></span>
 				</div>
+				<a href="/tours">
+				</a>
 				<div class="teaserSmallBottomSecond">
 					<span class="overlaySmall"><strong>Looking for adventure?</strong></span>
 				</div>
+				</a>
 			</div>
 		</div>
 		<div class="bwrapper">

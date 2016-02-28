@@ -16,14 +16,16 @@
 	display:block;
 	max-width:1180px;
 	margin:0px auto 25px auto;
-	padding:10px 10px 5px 10px;
-	background-color:#FFF;
-	border:1px solid #ddd;
+	padding:5px 0px 5px 0px;
 }
 
 .bannerBox{
-	width:33%;
+	width:32%;
 	display: inline-block;
+	background-color:#FFF;
+	border:1px solid #ddd;
+	padding:10px 10px 5px 10px;
+	margin:0 6px 0 6px;
 }
 
 .bannerBoxTitle{
@@ -43,17 +45,73 @@
 .teaser{
 	display:block;
 	width:1180px;
-	margin:0px auto 40px auto;
+	margin:0px auto 0px auto;
+	padding-bottom: 40px;
+}
+
+.caption {
+    position: relative;
+    overflow: hidden;
+    width:45%;
+	height: 480px;
+	transform: translateZ(0);
+	display: inline-block;
 }
 
 .teaserBig{
-	width:45%;
+	max-width:100%;
+	min-width:100%;
 	display: inline-block;
-	background-image:url(../img/Privatni_smjestaj_500_500.jpg);
+	background-image:url(../img/apartment1/44368063.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
+	background-position: center;
 	height: 480px;
-	position:relative;
+}
+
+.caption__overlay {
+    position: absolute;
+    top: calc(100% - 55px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transition: top .45s ease-out;
+    background:rgba(255,255,255,0.8);
+}
+
+.caption:hover .caption__overlay {
+    top:50%;
+}
+
+.caption__overlay__title {
+	font-size: 1.5em;
+	display:block;
+	width:100%;
+	left:0;
+	color:#733592;
+	position:absolute;
+    margin: 0;
+    padding: 15px;
+}
+
+.caption__overlay__content{
+	font-family: Georgia,"Times New Roman","Century Schoolbook L",serif;
+	font-style: italic;
+	font-size: 18px;
+	display: block;
+	width: 100%;
+	left: 0;
+	top:50px;
+	color:#5c5c8a;
+	position:absolute;
+    margin: 0;
+    padding: 0 15px 15px 15px;
+    text-align: inherit;
+}
+
+.bluefont:hover{
+	color:#3333ff;
 }
 
 .teaserSmall{
@@ -62,27 +120,141 @@
 	position:relative;
 }
 
-.teaserSmallTopFirst{
-	margin:0 0 20px 20px;
-	background-image:url(../img/NAZIV_400_300.jpg);
-	background-repeat: no-repeat;
-	background-size:cover;
+ .teaserSmall .caption{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 20px);
 	height: 260px;
-	position:relative;
+	transform: translateZ(0);
+	display: inline-block;
+	margin:0 0 20px 20px;
 }
 
-.teaserSmallBottomFirst{
-	margin:0 0 0 20px;
-	background-image:url(../img/Hrvatska-vile_400_300.jpg);
+.teaserSmall .caption__overlay{
+    position: absolute;
+    top: calc(100% - 50px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transition: top .45s ease-out;
+    background:rgba(255,255,255,0.8);
+}
+
+.teaserSmall .caption:hover .caption__overlay {
+    top:40%;
+}
+
+.teaserSmall .caption__overlay__title{
+    font-size: 18px;
+	display:block;
+	width:100%;
+	left:0;
+	color:#733592;
+	position:absolute;
+    margin: 0;
+    padding: 15px;
+}
+
+.teaserSmall .caption__overlay__content{
+    font-family: Georgia,"Times New Roman","Century Schoolbook L",serif;
+	font-style: italic;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	left: 0;
+	top:50px;
+	color:#5c5c8a;
+	position:absolute;
+    margin: 0;
+    padding: 0 15px 15px 15px;
+    text-align: inherit;
+}
+
+hr
+{
+    border: none;
+    height: 1px;
+    color: #5c5c8a; /* old IE */
+    background-color: #5c5c8a; /* Modern Browsers */
+}
+
+.teaserSmallTopFirst{
+	background-image:url(../img/krka.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
+	background-position: center;
+	height: 260px;
+	max-width:100%;
+	min-width:100%;
+	display: inline-block;
+}
+
+ .captionSmallBottom{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 20px);
 	height: 200px;
-	position:relative;
+	transform: translateZ(0);
+	display: inline-block;
+	margin:0 0 0 20px;
+}
+
+.captionSmallBottom .caption__overlay{
+    position: absolute;
+    top: calc(100% - 50px);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    transition: top .45s ease-out;
+    background:rgba(255,255,255,0.8);
+}
+
+.captionSmallBottom:hover .caption__overlay {
+    top:45%;
+}
+
+.captionSmallBottom .caption__overlay__title{
+    font-size: 18px;
+	display:block;
+	width:100%;
+	left:0;
+	color:#733592;
+	position:absolute;
+    margin: 0;
+    padding: 15px;
+}
+
+.captionSmallBottom .caption__overlay__content{
+    font-family: Georgia,"Times New Roman","Century Schoolbook L",serif;
+	font-style: italic;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	left: 0;
+	top:50px;
+	color:#5c5c8a;
+	position:absolute;
+    margin: 0;
+    padding: 0 15px 15px 15px;
+    text-align: inherit;
+}
+
+
+.teaserSmallBottomFirst{
+	background-image:url(../img/rentcar.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	height: 200px;
+	max-width:100%;
+	min-width:100%;
+	display: inline-block;
 }
 
 .teaserSmallTopSecond{
-	margin:0 0 20px 20px;
-	background-image:url(../img/Kuce_400_300.jpg);
+	background-image:url(../img/zrnosoli.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 260px;
@@ -90,8 +262,7 @@
 }
 
 .teaserSmallBottomSecond{
-	margin:0 0 0 20px;
-	background-image:url(../img/Dalmacija_400_300.jpg);
+	background-image:url(../img/adventure.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
 	height: 200px;
@@ -176,30 +347,4 @@ ul.branchtext > li{
 .branchtext a:hover{
 	color:#272628;
 	text-decoration: none;
-}
-
-span.overlay{
-	background:rgba(255,255,255,.8);
-	font-size: 1.5em;
-	bottom:0;
-	display:block;
-	z-index:1;
-	padding:10px;
-	width:100%;
-	left:0;
-	color:#733592;
-	position:absolute;
-}
-
-span.overlaySmall{
-	background:rgba(255,255,255,.8);
-	font-size: 1em;
-	bottom:0;
-	display:block;
-	z-index:1;
-	padding:10px;
-	width:100%;
-	left:0;
-	color:#733592;
-	position:absolute;
 }

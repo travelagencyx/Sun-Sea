@@ -15,7 +15,7 @@ document.write(`
       <h1>Accommodation</h1>
       <div class="displayBlock">
         <div class="accommodationcarousel"></div>
-    		<div class="banner">
+    		<div class="textBox">
           <div>
             <span class="textBoxMiddle">
     					Stay in one of our apartements located in heart of Split - Diocletian Palace.
