@@ -23,7 +23,9 @@ app.get('/apartmentSkalice', function (req, res) {
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');
 });
-
+app.get('/partners', function (req, res) {
+  res.sendFile(__dirname + '/partners.html');
+});
 app.listen(port, function () {
   console.log('Example app listening on port 3000!');
 });

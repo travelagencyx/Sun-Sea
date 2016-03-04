@@ -63,3 +63,6 @@ body {
 .clear{
   clear:both;
 }
+.hide{
+  display: none;
+}

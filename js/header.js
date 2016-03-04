@@ -8,7 +8,7 @@ document.write(`<div class="header">
               </a>
           </div>
       </div>
-      <div class="bigLeft text-right paddingBigTop small paddingBigRight">
+      <div class="hide bigLeft text-right paddingBigTop small paddingBigRight">
         <ul class="list-inline inlineblock">
           <li class="paddingBigLeft"><a href="#">About Us</a></li>
           <li class="paddingBigLeft"><a href="#">Contact</a></li>
@@ -27,6 +27,7 @@ document.write(`<div class="header">
         <li class="menu-item"><a href="/restaurants">restaurants</a></li>
         <li class="menu-item"><a href="/rentacar">rent a car</a></li>
         <li class="menu-item"><a href="/tours">tours</a></li>
+		<li class="menu-item"><a href="/partners">partners</a></li>
       </ul>
     </div>
   </div>

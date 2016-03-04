@@ -56,6 +56,7 @@
 	height: 480px;
 	transform: translateZ(0);
 	display: inline-block;
+	margin: 0 25px 0 25px;
 }
 
 .teaserBig{
@@ -115,19 +116,20 @@
 }
 
 .teaserSmall{
-	width:27%;
+	width:25%;
 	display: inline-block;
 	position:relative;
+	font-size: 0;
 }
 
  .teaserSmall .caption{
     position: relative;
     overflow: hidden;
-    width: calc(100% - 20px);
+    width: 100%;
 	height: 260px;
 	transform: translateZ(0);
 	display: inline-block;
-	margin:0 0 20px 20px;
+	margin:0 0 20px 0;
 }
 
 .teaserSmall .caption__overlay{
@@ -193,11 +195,11 @@ hr
  .captionSmallBottom{
     position: relative;
     overflow: hidden;
-    width: calc(100% - 20px);
+    width: 100%;
 	height: 200px;
 	transform: translateZ(0);
 	display: inline-block;
-	margin:0 0 0 20px;
+	margin:0 0 0 0;
 }
 
 .captionSmallBottom .caption__overlay{
