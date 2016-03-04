@@ -7,7 +7,7 @@
   position: relative;
 }
 .carouselv2 .counter {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 .carouselv2 .counter-within {
   font-size: 1rem;
@@ -17,6 +17,11 @@
   margin-left: -13px;
   color: white;
   text-shadow: 1px 1px #333;
+}
+
+h1#foodHeadline{
+  font-weight: normal;
+  margin-bottom: 8px;
 }
 
 .strip {
@@ -122,18 +127,20 @@
     width: 200px;
   }
 }
-.make{
+.foodname{
   text-decoration: none;
   transition: color .2s;
   background: none;
   border: none;
-  font-size: 16px;
-  color: #333;
+  font-size: 18px;
+  color: #007cca;
   margin: 5px 0;
 }
-
-.price{
-  font-size: 12px;
+.foodname:hover{
+  color: #000099;
+}
+.foodprice{
+  font-size: 14px;
   color: #333;
   margin: 0;
 }
