@@ -24,7 +24,6 @@ function initialize() {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  //script.src = "http://maps.google.com/maps/api/js?callback=initialize";
   script.src="https://maps.googleapis.com/maps/api/js?callback=initialize";
 
   document.body.appendChild(script);
