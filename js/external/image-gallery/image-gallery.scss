@@ -8,13 +8,12 @@
 ```
 */
 
-@import "../../scss/variables";
-
 image-gallery {
     backface-visibility: hidden; // layer creation for better 3d acceleration
     overflow: hidden;
     display: block;
     position: relative;
+    height:100%;
 
     background: transparent center center no-repeat url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20width%3D%2248%22%20height%3D%2248%22%20fill%3D%22%23ff7500%22%3E%3Cpath%20opacity%3D%22.25%22%20d%3D%22M16%200a16%2016%200%200%200%200%2032%2016%2016%200%200%200%200-32m0%204a12%2012%200%200%201%200%2024%2012%2012%200%200%201%200-24%22%2F%3E%3Cpath%20d%3D%22M16%200a16%2016%200%200%201%2016%2016h-4A12%2012%200%200%200%2016%204z%22%3E%3CanimateTransform%20attributeName%3D%22transform%22%20type%3D%22rotate%22%20from%3D%220%2016%2016%22%20to%3D%22360%2016%2016%22%20dur%3D%220.8s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
 
@@ -53,6 +52,7 @@ image-gallery {
         border: 0;
         outline: 0;
         z-index: 1;
+        cursor: pointer;
     }
 
     .gallery-next {
@@ -64,12 +64,12 @@ image-gallery {
     [data-counter] {
         color: #fff;
         position: absolute;
-        bottom: $S;
+        bottom: 10px;
         width: 100%;
         left: 0;
         text-align: center;
         padding: 0;
-        text-shadow: 1px 1px $black-100;
+        text-shadow: 1px 1px #000;
         z-index: 1;
     }
 }
