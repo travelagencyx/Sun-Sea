@@ -2,7 +2,7 @@
 # Image Gallery
 
 ```
-@import "path/to/showcar-styles/components/image-gallery";
+@import "/js/external/image-gallery";
 ...
 
 ```
@@ -53,14 +53,24 @@ image-gallery {
         outline: 0;
         z-index: 1;
         cursor: pointer;
+		transition: all 0.5s;
     }
 
     .gallery-next {
         right: 0;
         left: auto;
         transform: rotate(-180deg);
+		transition: all 0.5s;
     }
-
+	
+	.gallery-next:hover {
+        background-color: rgba(244, 244, 244, 0.2);
+    }
+	
+	.gallery-prev:hover {
+        background-color: rgba(244, 244, 244, 0.2);
+    }
+	
     [data-counter] {
         color: #fff;
         position: absolute;

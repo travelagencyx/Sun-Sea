@@ -44,6 +44,24 @@
 .paddingBottom {
   padding-bottom: 25px;
 }
+.restaurantTeaser{
+  width:100%;
+  position:relative;
+  margin-bottom:40px;
+  background-image: radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+  background-image: -o-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+    background-image: -ms-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+    background-image: -moz-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+    background-image: -webkit-radial-gradient(center, 170%  900%, #fff, #733592);
+}
+.restaurantdesc{
+	padding: 20px;
+	font-family: Georgia,"Times New Roman","Century Schoolbook L",serif;
+	font-style: italic;
+	font-size: 16px;
+	color: #5c5c8a;
+	width:auto;
+}
 .sliderFood {
   width: 90%;
   height: 200px;
