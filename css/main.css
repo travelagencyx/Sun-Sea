@@ -1,7 +1,7 @@
 *{
 	box-sizing: border-box;
 }
-body {
+body{
   margin:0;
   font-family: "sunsearegular","Roboto","Arial","Helvetica",sans-serif;
   font-size: 14px;
@@ -65,4 +65,10 @@ body {
 }
 .hide{
   display: none;
+}
+
+.self_clear:after {
+  content: "";
+  display: table;
+  clear: both;
 }
