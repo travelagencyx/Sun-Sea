@@ -118,3 +118,40 @@
 .searchButton:active {
 	border: 2px outset #733592;
 }
+
+.apartmentInfo{
+width:65%;
+}
+
+.infoHeadline{
+font-size: 1.5em;
+font-weight: 600;
+padding: 0;
+margin-top: -20px;
+}
+
+.infoText{
+padding: 0 0 20px 0;
+color: #565a5c;
+}
+
+.about{
+width:100%;
+}
+
+.aboutHeadline{
+font-size: 1.5em;
+font-weight: 600;
+padding: 0 0 20px 0;
+}
+
+.aboutText{
+padding: 0 0 20px 0;
+color: #565a5c;
+}
+
+.quarterwidth{
+width:20%;
+float:left;
+text-align: center;
+}
