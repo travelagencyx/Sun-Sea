@@ -2,6 +2,7 @@
   background-image: url(../img/apartment1/44367954.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   height: 400px;
   width: 100%;
   margin-bottom: 25px;
@@ -32,12 +33,24 @@
   float: left;
 }
 .galleryaccommodation{
-  background-image: url(../img/apartment1/44368087.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   height: 300px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.skalice{
+background-image: url(../img/apartment1/44367957.jpg);
+}
+
+.grad{
+background-image: url(../img/apartmentGrad/2.jpg);
+}
+
+.blatine{
+background-image: url(../img/apartment1/heh.jpg);
 }
 
 .accommodationinfo{

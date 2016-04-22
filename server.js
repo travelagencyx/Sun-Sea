@@ -18,7 +18,10 @@ app.get('/zrnosoli', function (req, res) {
   res.sendFile(__dirname + '/restaurant_details.html');
 });
 app.get('/apartmentSkalice', function (req, res) {
-  res.sendFile(__dirname + '/apartment_details.html');
+  res.sendFile(__dirname + '/apartment_details_Skalice.html');
+});
+app.get('/apartmentGrad', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Grad.html');
 });
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');

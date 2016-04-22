@@ -15,7 +15,7 @@ function initialize() {
       var marker = new google.maps.Marker({
         position: myLatlng,
         map: map,
-        title: 'Zrno Soli'
+        title: estate_object
       });
     }
   });
