@@ -3,6 +3,7 @@
 <html>
    <head>
       <title>SUN-SEA</title>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico">
 	  <link rel="stylesheet" type="text/css" href="css/sunseafont.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -39,7 +40,7 @@
                <div class="teaser">
                   <div class="apartmentCarousel">
                   </div>
-                  <div class="apartmentSearchbox">
+                  <div class="apartmentSearchbox" id="apartmentBook">
 					<div class="searchboxHeadline">
 						 <div class="searchboxPrice">
 						 85 €
@@ -51,11 +52,11 @@
                      <div class="searchboxSelection clear">
 						<div class="checkIn">
 							<div class="chkTitle">Check In</div>
-							<input type="text" class="date-picker">
+							<input type="text" id="arrival" class="date-picker">
 						</div>
 						<div class="checkOut">
 							<div class="chkTitle">Check Out</div>
-							<input type="text" class="date-picker">
+							<input type="text" id="departure" class="date-picker">
 						</div>
 						<div class="guests">
 							<div class="chkTitle">Guests</div>
@@ -68,33 +69,47 @@
 						</div>
 						<div class="calculateTable">
 							<div class="calculateTableLeft">
-							85 € x 1 night 
+							<span class="price">85</span> € x <span class="countnights">1</span> night 
 							</div>
 							<div class="calculateTableRight">
-							85 €
+							<span class="calcprice">85</span> €
 							</div>
 							<hr class="clear">
 							<div class="calculateTableLeft">
 							Service fee
 							</div>
 							<div class="calculateTableRight">
-							10 €
+							<span class="servicefee">10</span> €
 							</div>
 							<hr class="clear">
 							<div class="calculateTableLeft">
 							Total
 							</div>
 							<div class="calculateTableRight">
-							95 €
+							<span class="finalprice">95</span> €
+							</div>
+							<hr class="clear">
+							<div class="calculateTableLeft">
+							Enter your E-mail
+							</div>
+							<div class="calculateTableRight" style="padding-top:5px">
+							<input type="text" placeholder="E-mail" id="fromEmail"></input>
 							</div>
 						</div>
 					 </div>
 					 <div class="searchboxButton">
 						<button type="button" class="searchButton">
-						Book
+						Send request
 						</button>
 					 </div>
                   </div>
+
+                  <div class="thankBook">
+                  	<div class="thanks"><div class="thanksMaintext">Thank you. We will get back to you soon.</div><div class="thanksSubtext">For any other info, please contact us at travelagencyx@gmail.com</div></div>
+
+                  </div>
+
+
                </div>
              </div>
 			 <div class="displayBlock apartmentInfo">
@@ -161,14 +176,22 @@
 	  <script src="js/accommodation_details.js"></script>
       <script src="js/footer.js"></script>
 	  <script src="js/carousel.js"></script>
+	  <script src="js/external/moment.js"></script>
 	  <script src="js/external/pikaday.js"></script>
       <script type="text/javascript">
-		 var eleGroup = document.querySelectorAll('.date-picker');
-		 for(x in eleGroup) {
-			if(eleGroup.hasOwnProperty(x)) {
-				new Pikaday({ field: eleGroup[x] });
-			}
-		}
+		var start_date = new Pikaday({ field: document.getElementById("arrival"),
+						  format: 'L',
+						  minDate: moment().toDate(),
+						  onSelect: function() {
+						    	end_date.setMinDate(this.getDate());							  	
+						    }				
+						  });
+		var end_date = new Pikaday({ field: document.getElementById("departure"),
+						  format: 'L',
+						  onSelect: function() {
+						    	start_date.setMaxDate(this.getDate());							  	
+						    }				
+						  });
          carouselModule.init([["url(../img/apartmentGrad/1.jpg)",
                     "url(../img/apartmentGrad/2.jpg)",
 					"url(../img/apartmentGrad/3.jpg)",

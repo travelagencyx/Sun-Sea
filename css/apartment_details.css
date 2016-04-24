@@ -84,7 +84,7 @@
 }
 
 .searchboxButton{
-	padding:20px;
+	padding:40px 20px 20px 20px;
 	clear:both;
 	text-align: center;
 }
@@ -208,4 +208,34 @@ width: 30%;
   margin-top: 20px;
   height: 300px;
   background-color: #CCC;
+}
+
+.thankBook{
+  width:30%;
+  height: 480px;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  float: right;
+  position: relative;
+  display: none;
+}
+
+.thanks{
+	position: absolute;
+    top: 35%;
+    text-align: center;
+    padding: 15px;
+}
+
+.thanksMaintext{
+	font-family: Pacifico;
+ 	font-size: 2em;
+ 	color: rgba(115,53,146, 1);
+}
+
+.thanksSubtext{
+	font-family: sunsearegular;
+ 	font-size: 1em;
+ 	color: #000;
+ 	margin-top: 70px;
 }
