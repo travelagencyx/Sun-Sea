@@ -45,13 +45,13 @@
 .tourMore{
 	background-color: rgba(115, 53, 146, 0.1);
 	color: #733592;
-	padding: 10px 10px;
+	padding: 10px;
+	height: 40px;
 	margin-top: -40px;
 	font-size: 16px;
-	transition: 0.2s all ease-in;
 }
 
 .tourMore:hover{
-	background-color: rgba(0, 0, 204, 0.7);
+	background-color: rgba(115, 53, 146, 0.8);
 	color: #FFF;
 }
