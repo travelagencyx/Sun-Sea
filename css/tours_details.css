@@ -1,0 +1,28 @@
+.grid{
+	width: 99%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-col-4{
+	float: left;
+	width: 31.3%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-col-8{
+	float: left;
+	width: 64.6%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.toursRow{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.toursGallery{
+	height: 550px;
+}
