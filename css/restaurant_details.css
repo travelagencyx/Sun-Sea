@@ -50,9 +50,9 @@
   margin-bottom:40px;
   background-image: radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
   background-image: -o-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
-    background-image: -ms-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
-    background-image: -moz-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
-    background-image: -webkit-radial-gradient(center, 170%  900%, #fff, #733592);
+  background-image: -ms-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+  background-image: -moz-radial-gradient(center center, circle  closest-side, #ffeda3, #ffc800);
+  background-image: -webkit-radial-gradient(center, 170%  900%, #fff, #733592);
 }
 .restaurantdesc{
 	padding: 20px;

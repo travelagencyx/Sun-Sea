@@ -18,6 +18,13 @@
 	margin-right: 1%;
 }
 
+.grid-col-12{
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
 .toursRow{
 	margin-bottom: 40px;
 	overflow: hidden;
@@ -26,3 +33,40 @@
 .toursGallery{
 	height: 550px;
 }
+
+.toursInfo{
+	border: 1px solid #ddd;
+	height: 550px;
+	background-color: #fff;
+}
+
+.toursInfoHeader{
+	background-color: #733592;
+	color: #FFF;
+	padding: 10px 20px 10px 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.toursInfoText{
+	padding: 10px;
+}
+.textstyle{
+	font-size: 16px;
+	font-weight: bold;
+	color: #733592;
+}
+
+.toursText{
+	background-color:#FFF;
+	padding: 20px;
+	text-align: justify;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+ul {
+    list-style:none;
+    padding-left:10px;
+    line-height: 2;
+}​
