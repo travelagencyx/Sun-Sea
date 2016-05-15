@@ -1,0 +1,136 @@
+.grid{
+	width: 99%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-col-4{
+	float: left;
+	width: 31.3%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-col-8{
+	float: left;
+	width: 64.6%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-col-12{
+	float: left;
+	width: 98%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.aboutRow{
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+
+.aboutUsText{
+	padding: 20px 20px 20px 0px;
+	text-align: justify;
+}
+
+.contactForm{
+	padding: 20px;
+	border: 1px solid #ebebe0;
+}
+
+.contactHeadline{
+	display:block;
+	font-size: 1.75em;
+}
+
+hr{
+	color: #ebebe0;
+	background-color: #ebebe0;
+}
+
+.inputText{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sendMessageButton{
+	padding:40px 20px 20px 0px;
+	clear:both;
+	text-align: left;
+}
+
+.sendButton{
+	background-image: -moz-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8c8c5a), color-stop(100%, #a5a573));
+	background-image: -webkit-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -o-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -ms-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: linear-gradient(to bottom, #8c8c5a 0%, #a5a573 100%);
+	border: 0.5px solid #4B0082;
+	border-radius: 5px;	
+	height: 50px;
+	width:30%;
+	padding-left:20px;
+	text-align: left;
+	outline:none;
+	color: #FFF;
+	font-size: 1.25em;
+}
+
+.sendButton:hover {
+	background-image: -moz-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #8c8c5a), color-stop(50%, #a5a573));
+	background-image: -webkit-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -o-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -ms-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: linear-gradient(to bottom, #8c8c5a 0%, #a5a573 50%);
+}
+
+.sendButton:active {
+	border: 2px outset #733592;
+}
+
+.thankForm{
+  width:30%;
+  height: 480px;
+  background-color: #FFF;
+  border: 1px solid #ddd;
+  float: right;
+  position: relative;
+  display: none;
+}
+
+.thanks{
+	position: absolute;
+    top: 35%;
+    text-align: center;
+    padding: 15px;
+}
+
+.thanksMaintext{
+	font-family: Pacifico;
+ 	font-size: 2em;
+ 	color: rgba(115,53,146, 1);
+}
+
+.thanksSubtext{
+	font-family: sunsearegular;
+ 	font-size: 1em;
+ 	color: #000;
+ 	margin-top: 70px;
+}
+
+.bigfont{
+	font-size: 1.15em;
+}
+
+#map {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 400px;
+  background-color: #CCC;
+}

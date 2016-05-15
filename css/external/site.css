@@ -9,6 +9,12 @@ button#datepicker-button {
     margin-bottom: 3em;
 }
 
+textarea{
+	padding: 0.5em;
+	width: 100%;
+	    font-family: inherit;
+}
+
 .flow-element {
     display: inline-block;
     margin-right: 3em;

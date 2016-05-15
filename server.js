@@ -38,6 +38,9 @@ app.get('/tours_details', function (req, res) {
 app.get('/partners', function (req, res) {
   res.sendFile(__dirname + '/partners.html');
 });
+app.get('/about', function (req, res) {
+  res.sendFile(__dirname + '/about.html');
+});
 app.listen(port, function () {
   console.log('Example app listening on port 3000!');
 });

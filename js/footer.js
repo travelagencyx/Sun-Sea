@@ -15,7 +15,7 @@ document.write(`
 			<strong>Info</strong>
 			<ul class="footer-list">
 				<li></li>
-				<li><a>About us</a></li>
+				<li><a href="/about">About us</a></li>
 				<li><a></a></li>
 				<li><a></a></li>
 				<li><a></a></li>
