@@ -6,9 +6,9 @@ document.write(`
 		<div class="margin10tb">
 				<span class="workinghours"></span>
 				<strong>Working hours:</strong><br>
-				Monday - Friday: 08:00 - 16:00 h
+				Monday - Saturday: 11:00 - 19:00 h
 			</div>
-			<strong>Sunandseavacation.com</strong> - All rights reserved © 2016
+			<strong>Sunandseasplit.com</strong> - All rights reserved © 2016
 			<img src="">
 		</div>
 		<div class="width25">
@@ -24,7 +24,7 @@ document.write(`
 		<div class="width25">
 			<strong>Partner services</strong>
 			<ul class="footer-list">
-				<li><a>Cooperation with <br>the apartment owners</a></li>
+				<li><a class="not-active">Cooperation with <br>the apartment owners</a></li>
 				<li><a><a/></li>
 				<li><a></a></li>
 			</ul>

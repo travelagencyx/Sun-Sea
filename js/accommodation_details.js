@@ -29,7 +29,8 @@ arrival.addEventListener("change", function(){
 		var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
 		countnights.innerHTML = diffDays;
 		calcprice.innerHTML = parseInt(price.innerHTML) * diffDays;
-		servicefee.innerHTML = Math.round(parseInt(price.innerHTML) * diffDays * 0.1);
+		//servicefee.innerHTML = Math.round(parseInt(price.innerHTML) * diffDays * 0.1);
+		servicefee.innerHTML = 0;
 		finalprice.innerHTML = parseInt(servicefee.innerHTML) + parseInt(calcprice.innerHTML);
 	}
 });
@@ -42,7 +43,8 @@ departure.addEventListener("change", function(){
 		var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
 		countnights.innerHTML = diffDays;
 		calcprice.innerHTML = parseInt(price.innerHTML) * diffDays;
-		servicefee.innerHTML = Math.round(parseInt(price.innerHTML) * diffDays * 0.1);
+		//servicefee.innerHTML = Math.round(parseInt(price.innerHTML) * diffDays * 0.1);
+		servicefee.innerHTML = 0;
 		finalprice.innerHTML = parseInt(servicefee.innerHTML) + parseInt(calcprice.innerHTML);
 	}
 });

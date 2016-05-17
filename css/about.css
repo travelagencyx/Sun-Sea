@@ -134,3 +134,15 @@ hr{
   height: 400px;
   background-color: #CCC;
 }
+
+.company{
+padding: 20px;
+}
+
+.boldfont{
+font-weight: 600;
+}
+
+.removeListStyle{
+padding-left: 0px;
+}

@@ -104,6 +104,7 @@
   transition: all 1s;
   -webkit-transition: all 1s;
 }
+
 .teaserBigRestaurants:hover .mask,
 .teaserSmallTopFirst:hover .mask,
 .teaserSmallBottomFirst:hover .mask,
