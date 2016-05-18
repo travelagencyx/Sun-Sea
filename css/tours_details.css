@@ -70,3 +70,41 @@ ul {
     padding-left:10px;
     line-height: 2;
 }​
+.contactForm{
+	text-align: center;
+}
+.sendinquiryButton{
+	padding:0px 20px 20px 20px;
+	clear:both;
+	text-align: center;
+}
+
+.inquiryButton{
+	background-image: -moz-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7BDBEB), color-stop(100%, #0000cd));
+	background-image: -webkit-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -o-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: -ms-linear-gradient(top, #7BDBEB 0%, #0000cd 100%);
+	background-image: linear-gradient(to bottom, #7BDBEB 0%, #0000cd 100%);
+	border: 0.5px solid #4B0082;
+	border-radius: 5px;	
+	height: 50px;
+	width:90%;
+	margin: auto;
+	outline:none;
+	color: #FFF;
+	font-size: 1.5em;
+}
+
+.inquiryButton:hover {
+	background-image: -moz-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #7BDBEB), color-stop(50%, #0000cd));
+	background-image: -webkit-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -o-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: -ms-linear-gradient(top, #7BDBEB 0%, #0000cd 50%);
+	background-image: linear-gradient(to bottom, #7BDBEB 0%, #0000cd 50%);
+}
+
+.inquiryButton:active {
+	border: 2px outset #733592;
+}

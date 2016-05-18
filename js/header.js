@@ -27,7 +27,7 @@ document.write(`<div class="header">
         <li class="menu-item"><a href="/restaurants">restaurants</a></li>
         <li class="menu-item"><a href="/rentacar">rent a car</a></li>
         <li class="menu-item"><a href="/tours">tours</a></li>
-		<li class="menu-item"><a href="/partners">partners</a></li>
+		<li class="menu-item"><a href="/about">About Us</a></li>
       </ul>
     </div>
   </div>
