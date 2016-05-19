@@ -102,3 +102,8 @@ li {
   color: #fff;
   transition: background .5s ease-in;
 }
+
+.disabled {
+  opacity: 0.65; 
+  cursor: not-allowed;
+}
