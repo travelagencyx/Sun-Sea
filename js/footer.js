@@ -30,7 +30,13 @@ document.write(`
 			</ul>
 		</div>
 		<div class="width25">
-			<div><strong>Follow us:</strong> facebook</div>	
+			<div class="line-leight-big">
+				<strong>Follow us:</strong>
+				<a href="https://www.facebook.com/vacationsunandsea/">
+				 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -5 30 30">
+					<path d="M7 18v-8H4V7h3V4.5C7.1 2.9 8 1 10 1h3v3h-3v3h3v3h-3v8H7z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+				</a>
+			</div>	
 		</div>
 	</div>
 `);
