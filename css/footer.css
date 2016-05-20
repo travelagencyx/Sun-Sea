@@ -57,3 +57,14 @@ ul.footer-list > li{
    pointer-events: none;
    cursor: default;
 }
+
+svg{
+	fill: white;
+    background-color: #1e4c7a;
+    border-radius: 5px;
+    width: 32px;
+	height: 32px;
+    margin-right: 8px;
+	margin-left: 10px;
+	background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%22-7%20-5%2030%2030%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M7%2018v-8H4V7h3V4.5C7.1%202.9%208%201%2010%201h3v3h-3v3h3v3h-3v8H7z%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+}
