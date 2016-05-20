@@ -29,6 +29,9 @@ app.get('/apartmentSkalice', function (req, res) {
 app.get('/apartmentGrad', function (req, res) {
   res.sendFile(__dirname + '/apartment_details_Grad.html');
 });
+app.get('/apartmentAlen', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Alen.html');
+});
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');
 });
