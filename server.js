@@ -23,14 +23,14 @@ app.get('/restaurants', function (req, res) {
 app.get('/zrnosoli', function (req, res) {
   res.sendFile(__dirname + '/restaurant_details.html');
 });
-app.get('/apartmentSkalice', function (req, res) {
-  res.sendFile(__dirname + '/apartment_details_Skalice.html');
+app.get('/apartmentMirjana', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Mirjana.html');
 });
-app.get('/apartmentGrad', function (req, res) {
-  res.sendFile(__dirname + '/apartment_details_Grad.html');
+app.get('/apartmentDamir', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Damir.html');
 });
-app.get('/apartmentAlen', function (req, res) {
-  res.sendFile(__dirname + '/apartment_details_Alen.html');
+app.get('/apartmentMarija', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Marija.html');
 });
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');
