@@ -9,6 +9,7 @@
       <meta charset="UTF-8">
       <meta name="description" content="Tourist Agency in Split">
       <meta name="keywords" content="accomodation, rent a car, tour, restaurant, split, vacation, sun and sea, adventures, apartments, rooms">
+      <link rel="stylesheet" type="text/css" href="css/sunseafont.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
       <link rel="stylesheet" type="text/css" href="css/header.css">
       <link rel="stylesheet" type="text/css" href="css/content.css">
@@ -16,7 +17,40 @@
       <link rel="stylesheet" type="text/css" href="css/footer.css">
    </head>
    <body>
-    <script src="js/header.js"></script>
+    <div class="header">
+        <div class="container">
+          <div class="marginsInside displayBlock paddingSmallTop">
+            <div class="smallLeft">
+                <div class="noPadding" style="line-height:0;">
+                    <a href="#" title="Sun and Sea">
+                        <img id="logo" src="img/logo.png">
+                    </a>
+                </div>
+            </div>
+            <div class="hide bigLeft text-right paddingBigTop small paddingBigRight">
+              <ul class="list-inline inlineblock">
+                <li class="paddingBigLeft"><a href="#">About Us</a></li>
+                <li class="paddingBigLeft"><a href="#">Contact</a></li>
+                <li class="paddingBigLeft"><a href="#">Change Language</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav">
+            <ul class="menu displayBlock noSpaces">
+              <li class="menu-item">
+                <a href="/" class="current-menu-item">
+                  <span id="home"><img id="home" src="img/home.png"></span>
+                </a>
+              </li>
+              <li class="menu-item"><a href="/accomodation">accomodation</a></li>
+              <li class="menu-item"><a href="/restaurants">restaurants</a></li>
+              <li class="menu-item"><a href="#" class="disabled">rent a car</a></li>
+              <li class="menu-item"><a href="#" class="disabled">tours</a></li>
+          <li class="menu-item"><a href="/about">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     <div class="content">
 		<div class="container">
 			<div class="contentInside">
@@ -96,7 +130,46 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/footer.js"></script>
+	<div class="footer-line">
+      </div>
+      <div class="footer-content clearfix">
+        <div class="width25">
+        <div class="margin10tb">
+            <span class="workinghours"></span>
+            <strong>Working hours:</strong><br>
+            Monday - Saturday: 11:00 - 19:00 h
+          </div>
+          <strong>Sunandseasplit.com</strong> - All rights reserved © 2016
+          <img src="">
+        </div>
+        <div class="width25">
+          <strong>Info</strong>
+          <ul class="footer-list">
+            <li></li>
+            <li><a href="/about">About us</a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+            <li><a></a></li>
+          </ul>
+        </div>
+        <div class="width25">
+          <strong>Partner services</strong>
+          <ul class="footer-list">
+            <li><a class="not-active">Cooperation with <br>the apartment owners</a></li>
+            <li><a><a/></li>
+            <li><a></a></li>
+          </ul>
+        </div>
+        <div class="width25">
+          <div class="line-leight-big">
+            <strong>Follow us:</strong>
+            <a href="https://www.facebook.com/vacationsunandsea/">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-7 -5 30 30">
+              <path d="M7 18v-8H4V7h3V4.5C7.1 2.9 8 1 10 1h3v3h-3v3h3v3h-3v8H7z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </a>
+          </div>  
+        </div>
+      </div>
 	<script src="js/tours_details.js"></script>
 	<script src="js/external/carouselv2.js"></script>
     <script src="js/external/image-gallery/bundlegallery.js"></script>
