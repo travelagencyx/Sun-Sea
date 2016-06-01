@@ -38,6 +38,18 @@ app.get('/tours', function (req, res) {
 app.get('/tours_details', function (req, res) {
   res.sendFile(__dirname + '/tours_details.html');
 });
+app.get('/krka', function (req, res) {
+  res.sendFile(__dirname + '/krka.html');
+});
+app.get('/sunsetsailing', function (req, res) {
+  res.sendFile(__dirname + '/sunsetsailing.html');
+});
+app.get('/bluecave', function (req, res) {
+  res.sendFile(__dirname + '/bluecave.html');
+});
+app.get('/tours_details', function (req, res) {
+  res.sendFile(__dirname + '/tours_SplitTour.html');
+});
 app.get('/partners', function (req, res) {
   res.sendFile(__dirname + '/partners.html');
 });

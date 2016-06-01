@@ -55,3 +55,35 @@
 	background-color: rgba(115, 53, 146, 0.8);
 	color: #FFF;
 }
+
+.tourKrka{
+	background-image: url(../img/tours/krka1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourPic{
+	background-image: url(../img/tours/plitvice.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourPic{
+	background-image: url(../img/tours/plitvice.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourBlueCave{
+	background-image: url(../img/tours/bluecave3.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
