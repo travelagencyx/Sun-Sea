@@ -87,3 +87,35 @@
 	background-size: cover;
 	height: 250px;
 }
+
+.tourSunsetPic{
+	background-image: url(../img/tours/sunset1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourWalkingSplit{
+	background-image: url(../img/tours/splitwalking5.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourRafting{
+	background-image: url(../img/tours/rafting1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourZipline{
+	background-image: url(../img/tours/zipline1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}

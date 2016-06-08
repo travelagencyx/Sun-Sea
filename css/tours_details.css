@@ -66,11 +66,11 @@
 	line-height: 1.5;
 }
 
-ul {
+ul{
     list-style:none;
     padding-left:10px;
     line-height: 2;
-}​
+}
 
 .contactForm{
 	text-align: center;
@@ -78,6 +78,7 @@ ul {
 	position: absolute;
 	bottom: 5px;
 }
+
 .sendinquiryButton{
 	padding:0px 20px 20px 20px;
 	clear:both;

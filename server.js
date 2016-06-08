@@ -38,6 +38,7 @@ app.get('/tours', function (req, res) {
 app.get('/tours_details', function (req, res) {
   res.sendFile(__dirname + '/tours_details.html');
 });
+//tours
 app.get('/krka', function (req, res) {
   res.sendFile(__dirname + '/krka.html');
 });
@@ -47,9 +48,25 @@ app.get('/sunsetsailing', function (req, res) {
 app.get('/bluecave', function (req, res) {
   res.sendFile(__dirname + '/bluecave.html');
 });
-app.get('/tours_details', function (req, res) {
-  res.sendFile(__dirname + '/tours_SplitTour.html');
+app.get('/splitwalking', function (req, res) {
+  res.sendFile(__dirname + '/splitwalking.html');
 });
+app.get('/rafting', function (req, res) {
+  res.sendFile(__dirname + '/rafting.html');
+});
+app.get('/zipline', function (req, res) {
+  res.sendFile(__dirname + '/zipline.html');
+});
+app.get('/quad', function (req, res) {
+  res.sendFile(__dirname + '/quad.html');
+});
+app.get('/paddling', function (req, res) {
+  res.sendFile(__dirname + '/paddling.html');
+});
+
+
+
+
 app.get('/partners', function (req, res) {
   res.sendFile(__dirname + '/partners.html');
 });
