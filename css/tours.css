@@ -119,3 +119,19 @@
 	background-size: cover;
 	height: 250px;
 }
+
+.tourQuad{
+	background-image: url(../img/tours/quad1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
+
+.tourPaddling{
+	background-image: url(../img/tours/paddling1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 250px;
+}
