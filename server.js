@@ -11,17 +11,10 @@ app.use(express.static(__dirname + '/'));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
+
+//accommodation
 app.get('/accomodation', function (req, res) {
   res.sendFile(__dirname + '/accomodation.html');
-});
-app.get('/rentacar', function (req, res) {
-  res.sendFile(__dirname + '/rentacar.html');
-});
-app.get('/restaurants', function (req, res) {
-  res.sendFile(__dirname + '/restaurants.html');
-});
-app.get('/zrnosoli', function (req, res) {
-  res.sendFile(__dirname + '/restaurant_details.html');
 });
 app.get('/apartmentMirjana', function (req, res) {
   res.sendFile(__dirname + '/apartment_details_Mirjana.html');
@@ -32,13 +25,20 @@ app.get('/apartmentDamir', function (req, res) {
 app.get('/apartmentMarija', function (req, res) {
   res.sendFile(__dirname + '/apartment_details_Marija.html');
 });
+
+//rentacar
+app.get('/rentacar', function (req, res) {
+  res.sendFile(__dirname + '/rentacar.html');
+});
+
+
+//tours
 app.get('/tours', function (req, res) {
   res.sendFile(__dirname + '/tours.html');
 });
 app.get('/tours_details', function (req, res) {
   res.sendFile(__dirname + '/tours_details.html');
 });
-//tours
 app.get('/krka', function (req, res) {
   res.sendFile(__dirname + '/krka.html');
 });
@@ -64,9 +64,19 @@ app.get('/paddling', function (req, res) {
   res.sendFile(__dirname + '/paddling.html');
 });
 
+//restaurants
+app.get('/restaurants', function (req, res) {
+  res.sendFile(__dirname + '/restaurants.html');
+});
+app.get('/zrnosoli', function (req, res) {
+  res.sendFile(__dirname + '/restaurant_details.html');
+});
+app.get('/adriaticSushi', function (req, res) {
+  res.sendFile(__dirname + '/adriaticSushi.html');
+});
 
 
-
+//misc
 app.get('/partners', function (req, res) {
   res.sendFile(__dirname + '/partners.html');
 });
