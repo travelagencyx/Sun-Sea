@@ -10,10 +10,12 @@
       <meta name="description" content="Lucy, Danko, Darko, Olga and Ivan will bring the past alive and share the facts and inside stories with you on the best rated tour in town. Split walking tour includes the Roman part of town (Diocletian palace) and Medieval part of town (City hall, promenade, Fish market..)">
       <link rel="stylesheet" type="text/css" href="css/sunseafont.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/external/site.css">
       <link rel="stylesheet" type="text/css" href="css/header.css">
       <link rel="stylesheet" type="text/css" href="css/content.css">
       <link rel="stylesheet" type="text/css" href="css/tours_details.css">
       <link rel="stylesheet" type="text/css" href="css/footer.css">
+      <link rel="stylesheet" type="text/css" href="css/external/pikaday.css">
    </head>
    <body>
     <div class="header">
@@ -113,7 +115,30 @@
                     </li>
 									</ul>
 									</div>
-									<div class="contactForm">
+									<div class="contactForm" id="contactForm" style="display:none">
+                    <div class="contactHeadline">
+                       Send us your inquiry
+                    </div>
+                    <hr>
+                    <div class="contactBody" action="/" method="post">
+                       <div class="inputText">Enter your name:</div>
+                       <input type="text" placeholder="Name" id="name"></input>
+                       <div class="inputText">Enter your message (optional):</div>
+                       <textarea rows="5" placeholder="Message" id="message"></textarea>
+                       <div class="checkIn">
+                        <div class="chkTitle">Enter date of your tour:</div>
+                        <input type="text" id="arrival" class="date-picker">
+                       </div>
+                       <div class="inputText">Enter your E-Mail:</div>
+                       <input type="text" placeholder="E-mail" id="fromEmail"></input>
+                    </div>
+                    <div class="sendMessageButton">
+                       <button type="button" class="sendButton">
+                          Send
+                       </button>
+                     </div>
+                 </div>
+                  <div class="inquiryForm">
 										<div class="sendinquiryButton">
 											<button type="button" class="inquiryButton">
 											   Send inquiry
@@ -184,6 +209,14 @@
       </div>
 	<script src="js/tours_details.js"></script>
 	<script src="js/external/carouselv2.js"></script>
-    <script src="js/external/image-gallery/bundlegallery.js"></script>
+  <script src="js/external/image-gallery/bundlegallery.js"></script>
+  <script src="js/external/moment.js"></script>
+  <script src="js/external/pikaday.js"></script>
+  <script type="text/javascript">
+  var start_date = new Pikaday({ field: document.getElementById("arrival"),
+            format: 'L',
+            minDate: moment().toDate()       
+            });
+  </script>
    </body>
 </html>

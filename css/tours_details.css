@@ -72,7 +72,7 @@ ul{
     line-height: 2;
 }
 
-.contactForm{
+.inquiryForm{
 	text-align: center;
 	width: 100%;
 	position: absolute;
@@ -113,4 +113,68 @@ ul{
 
 .inquiryButton:active {
 	border: 2px outset #733592;
+}
+
+.contactForm{
+	padding: 20px;
+	border: 1px solid #ebebe0;
+}
+
+.contactHeadline{
+	display:block;
+	font-size: 1.75em;
+}
+
+hr{
+	color: #ebebe0;
+	background-color: #ebebe0;
+}
+
+.inputText{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.sendMessageButton{
+	padding:40px 20px 20px 0px;
+	clear:both;
+	text-align: left;
+}
+
+.sendButton{
+	background-image: -moz-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8c8c5a), color-stop(100%, #a5a573));
+	background-image: -webkit-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -o-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: -ms-linear-gradient(top, #8c8c5a 0%, #a5a573 100%);
+	background-image: linear-gradient(to bottom, #8c8c5a 0%, #a5a573 100%);
+	border: 0.5px solid #4B0082;
+	border-radius: 5px;	
+	height: 50px;
+	width:30%;
+	text-align: center;
+	outline:none;
+	color: #FFF;
+	font-size: 1.25em;
+}
+
+.sendButton:hover {
+	background-image: -moz-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #8c8c5a), color-stop(50%, #a5a573));
+	background-image: -webkit-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -o-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: -ms-linear-gradient(top, #8c8c5a 0%, #a5a573 50%);
+	background-image: linear-gradient(to bottom, #8c8c5a 0%, #a5a573 50%);
+}
+
+.sendButton:active {
+	border: 2px outset #733592;
+}
+
+.chkTitle{
+  padding:10px 0 10px 0;
+}
+
+.checkIn{
+	width:50%;
 }
