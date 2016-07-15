@@ -26,6 +26,8 @@ sendButton.addEventListener("click", function(){
 	var exit = false;
 	var email = document.getElementById("fromEmail").value;
 	var name = document.querySelector("#name").value;
+	var adults = document.querySelector("#adults").value;
+	var children = document.querySelector("#children").value;
 	var message = document.querySelector("#message").value;
 	var date = document.querySelector("#arrival").value;
 	var tour = document.querySelector(".toursInfoHeader").innerHTML;
@@ -35,6 +37,23 @@ sendButton.addEventListener("click", function(){
 	}
 	else{
 		document.querySelector("#name").style.border = "2px inset";
+		exit = false;
+	}
+	if ((adults === "") || (children === "")){
+		if ((adults === "") && (children === "")){
+			document.querySelector("#adults").style.border = "2px solid #FF0000";
+			exit = true;
+		} else if (adults === ""){
+			document.querySelector("#adults").style.border = "2px solid #FF0000";
+			exit = true;
+		} else {
+			document.querySelector("#children").style.border = "2px solid #FF0000";
+			exit = true;
+		}
+	}
+	else{
+		document.querySelector("#adults").style.border = "2px inset";
+		document.querySelector("#children").style.border = "2px inset";
 		exit = false;
 	} 
 	if (date === ""){
@@ -55,13 +74,13 @@ sendButton.addEventListener("click", function(){
 	} 
 	if(exit == true){
 		return;
-	} 
+	}
 
 	var obj = {
 		from: email,
     	to: 'travelagencyx@gmail.com',
-    	subject: 'Message from ' + email + ' for' + tour,
-    	text: 'Message: ' + message + '. I would love to go to ' + tour + ' at ' + date
+    	subject: 'Message from ' + name + ' for' + tour,
+    	text: 'Message: ' + message + '. I would love to go to ' + tour + ' at ' + date + '. Adults: ' + adults + '. Children ' + children + '.'
 	};
 	
 	var xhr = getAjax();
@@ -81,6 +100,5 @@ inquiryButton.addEventListener("click", function(){
 		bookBlock.style.display = "block";
 		toursInfoText.style.display = "none";
 		inquiryForm.style.display = "none";
-	} 
+	}
 });
-
