@@ -22,8 +22,17 @@ app.get('/apartmentMirjana', function (req, res) {
 app.get('/apartmentDamir', function (req, res) {
   res.sendFile(__dirname + '/apartment_details_Damir.html');
 });
-app.get('/apartmentMarija', function (req, res) {
-  res.sendFile(__dirname + '/apartment_details_Marija.html');
+app.get('/apartmentBossaNova', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_BossaNova.html');
+});
+app.get('/apartmentAndrea', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Andrea.html');
+});
+app.get('/apartmentAna', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Ana.html');
+});
+app.get('/apartmentKaraman', function (req, res) {
+  res.sendFile(__dirname + '/apartment_details_Karaman.html');
 });
 
 //rentacar

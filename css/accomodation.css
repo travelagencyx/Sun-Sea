@@ -1,5 +1,5 @@
 .accommodationcarousel {    
-  background-image: url(../img/apartment1/44367954.jpg);
+  background-image: url(../img/apartmentMirjana/44367954.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -41,20 +41,28 @@
   border-top-right-radius: 15px;
 }
 
+.damir{
+background-image: url(../img/apartmentDamir/Damir1.jpg);
+}
+
+.bossanova{
+background-image: url(../img/apartmentBossaNova/BossaNova1.jpg);
+}
+
+.andrea{
+background-image: url(../img/apartmentAndrea/Andrea1.jpg);
+}
+
 .skalice{
-background-image: url(../img/apartment1/44367957.jpg);
+background-image: url(../img/apartmentMirjana/44367957.jpg);
 }
 
-.grad{
-background-image: url(../img/apartmentGrad/2.jpg);
+.ana{
+background-image: url(../img/apartmentAna/Ana1.jpg);
 }
 
-.alen{
-background-image: url(../img/apartmentAlen/1a.jpg);
-}
-
-.blatine{
-background-image: url(../img/apartment1/heh.jpg);
+.karaman{
+background-image: url(../img/apartmentKaraman/Karaman1.jpg);
 }
 
 .accommodationinfo{

@@ -3,6 +3,7 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-size:cover;
+  background-position: center center;
   height: 480px;
   transition: opacity 1s;
 }
