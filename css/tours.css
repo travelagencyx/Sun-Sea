@@ -4,11 +4,28 @@
 	margin-right: 1%;
 }
 
-.grid-col-3{
-	float: left;
-	width: 23%;
-	margin-left: 1%;
-	margin-right: 1%;
+@media screen and (min-width: 1024px){
+	.grid-col-3{
+		float: left;
+		width: 23%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.tourInfo{
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	.grid-col-6-m{
+		float: left;
+		width: 48%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.tourInfo{
+		height: 200px;
+	}
 }
 
 .toursRow{
@@ -36,7 +53,6 @@
 
 .tourInfo{
 	background-color: #FFF;
-	height: 300px;
 	padding: 20px 10px;
 	text-align: justify;
 	line-height: 1.5;
@@ -58,14 +74,6 @@
 
 .tourKrka{
 	background-image: url(../img/tours/krka1.jpg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	height: 250px;
-}
-
-.tourPic{
-	background-image: url(../img/tours/plitvice.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
