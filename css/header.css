@@ -40,9 +40,23 @@
 .small {
   font-size: 92%;
 }
-.smallLeft {
-  width: 25%;
-  float: left;
+@media only screen and (max-width: 767px){
+	.smallLeft {
+		 width: 80%;
+		 float: left;
+	}
+}
+@media only screen and (min-width: 768px){
+	.smallLeft {
+		 width: 50%;
+		 float: left;
+	}
+}
+@media only screen and (min-width: 1024px){
+	.smallLeft {
+		 width: 25%;
+		 float: left;
+	}
 }
 .bigLeft {
   width: 75%;

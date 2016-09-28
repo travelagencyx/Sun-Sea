@@ -1,36 +1,108 @@
-.grid{
-	width: 99%;
-	margin-left: 1%;
-	margin-right: 1%;
+h1{padding-left: 8px;}
+
+hr{
+	border: none;
+	height: 1px;
+	color: #5c5c8a; /* old IE */
+	background-color: #5c5c8a; /* Modern Browsers */
+	opacity: 0.3;
+	margin: 15px 10px 0px 10px;
 }
 
-@media screen and (min-width: 1024px){
+.content{
+	background-color:#F4F4F4;
+}
+
+@media only screen and (max-width: 767px){
+	.grid{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.toursRow{
+		margin-bottom: 0;
+		overflow: hidden;
+	}
+	.grid-col-12-s{
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.tourBotMargin{
+		margin-bottom: 15px;
+	}
+	.tourInfo{
+		height: auto;
+	}
+	.tourMore{
+		background-color: rgba(115, 53, 146, 0.1);
+		color: #733592;
+		padding: 10px;
+		height: 50px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.grid{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.toursRow{
+		margin-bottom: 0;
+		overflow: hidden;
+	}
+	.grid-col-6-m{
+		float: left;
+		width: 47.5%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.tourBotMargin{
+		margin-bottom: 10px;
+	}
+	.tourInfo{
+		height: 200px;
+	}
+	.tourMore{
+		background-color: rgba(115, 53, 146, 0.1);
+		color: #733592;
+		padding: 10px;
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.grid{
+		width: 98%;
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	.toursRow{
+		margin-bottom: 40px;
+		overflow: hidden;
+	}
 	.grid-col-3{
 		float: left;
 		width: 23%;
 		margin-left: 1%;
 		margin-right: 1%;
 	}
+	.tourBotMargin{
+		margin-bottom: 0px;
+	}
 	.tourInfo{
 		height: 300px;
 	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-	.grid-col-6-m{
-		float: left;
-		width: 48%;
-		margin-left: 1%;
-		margin-right: 1%;
+	.tourMore{
+		background-color: rgba(115, 53, 146, 0.1);
+		color: #733592;
+		padding: 10px;
+		height: 40px;
+		font-size: 16px;
 	}
-	.tourInfo{
-		height: 200px;
-	}
-}
-
-.toursRow{
-	margin-bottom: 40px;
-	overflow: hidden;
 }
 
 .tourPic{
@@ -48,7 +120,7 @@
 	margin-top: -40px;
 	font-size: 1.5em;
 	font-weight: 600;
-	padding: 5px 10px;
+	padding: 2px 10px;
 }
 
 .tourInfo{
@@ -56,15 +128,6 @@
 	padding: 20px 10px;
 	text-align: justify;
 	line-height: 1.5;
-}
-
-.tourMore{
-	background-color: rgba(115, 53, 146, 0.1);
-	color: #733592;
-	padding: 10px;
-	height: 40px;
-	margin-top: -40px;
-	font-size: 16px;
 }
 
 .tourMore:hover{
