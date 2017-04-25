@@ -13,7 +13,7 @@ hr{
 	background-color:#F4F4F4;
 }
 
-@media only screen and (max-width: 767px){
+@media all and (max-width: 767px) {
 	.grid{
 		width: 100%;
 		margin-left: 0;
@@ -23,7 +23,7 @@ hr{
 		margin-bottom: 0;
 		overflow: hidden;
 	}
-	.grid-col-12-s{
+	.grid-col-12{
 		width: 100%;
 		margin-left: 0;
 		margin-right: 0;
@@ -43,7 +43,7 @@ hr{
 	}
 }
 
-@media only screen and (min-width: 768px){
+@media all and (min-width: 768px) {
 	.grid{
 		width: 98%;
 		margin-left: 1%;
@@ -74,7 +74,7 @@ hr{
 	}
 }
 
-@media only screen and (min-width: 1024px){
+@media all and (min-width: 1024px) {
 	.grid{
 		width: 98%;
 		margin-left: 1%;
