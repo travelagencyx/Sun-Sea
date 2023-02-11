@@ -41,4 +41,4 @@ jobs:
           app-name: 'Sunandseasplit'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_69FC9509963E4191B098BF9736E97529 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA409A014B84C4BB0A41ADE335F5F42 }}
