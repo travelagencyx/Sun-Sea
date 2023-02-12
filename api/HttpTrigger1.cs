@@ -19,7 +19,7 @@ namespace sunandseasplit.Function
         }
 
         [Function("SendEmail")]
-        public async Task Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public async Task<string> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -34,6 +34,8 @@ namespace sunandseasplit.Function
             var to = new EmailAddress(toEmail);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, message, message);
             var response = await client.SendEmailAsync(msg);
+
+            return JsonConvert.SerializeObject(response);
         }
     }
 }
