@@ -19,7 +19,7 @@ namespace sunandseasplit.Function
         }
 
         [Function("SendEmail")]
-        public async Task<string> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public async Task Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -30,12 +30,11 @@ namespace sunandseasplit.Function
 
             var apiKey = Environment.GetEnvironmentVariable("SendGrid_ApiKey");
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("travelagencyx@gmail.com", "Example");
+            var from = new EmailAddress("karlojurcevic123@gmail.com", "Example");
             var to = new EmailAddress(toEmail);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, message, message);
             var response = await client.SendEmailAsync(msg);
 
-            return JsonConvert.SerializeObject(response);
         }
     }
 }
