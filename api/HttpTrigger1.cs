@@ -14,17 +14,36 @@ namespace sunandseasplit.Function
             _logger = loggerFactory.CreateLogger<HttpTrigger1>();
         }
 
-        [Function("HttpTrigger1")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequestData req)
+        [Function("SendEmail")]
+        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
-            _logger.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("C# HTTP trigger function processed a request.");
 
-            var response = req.CreateResponse(HttpStatusCode.OK);
-            response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            dynamic data = JsonConvert.DeserializeObject(requestBody);
+            string toEmail = data?.to;
+            string subject = data?.subject;
+            string message = data?.text;
 
-            response.WriteString("Welcome to Azure Functions!");
+            if (string.IsNullOrEmpty(toEmail)  string.IsNullOrEmpty(subject)  string.IsNullOrEmpty(message))
+            {
+                return new BadRequestObjectResult("Please provide all required fields (toEmail, subject, message)");
+            }
 
-            return response;
-        }
+            var apiKey = Environment.GetEnvironmentVariable("SendGrid_ApiKey");
+            var client = new SendGridClient(apiKey);
+            var from = new EmailAddress("travelagencyx@gmail.com", "Example");
+            var to = new EmailAddress(toEmail);
+            var msg = MailHelper.CreateSingleEmail(from, to, subject, message, message);
+            var response = await client.SendEmailAsync(msg);
+
+            if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
+            {
+                return new OkObjectResult("Email sent successfully.");
+            }
+            else
+            {
+                return new BadRequestObjectResult("Failed to send email.");
+            }
     }
 }

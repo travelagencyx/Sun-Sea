@@ -84,7 +84,7 @@ sendButton.addEventListener("click", function(){
 	};
 	
 	var xhr = getAjax();
-	xhr.open('POST', "/sendEmail");
+	xhr.open('POST', "/api/SendEmail");
 	xhr.setRequestHeader("Content-type", "application/json");
     xhr.send(JSON.stringify(obj));
 
