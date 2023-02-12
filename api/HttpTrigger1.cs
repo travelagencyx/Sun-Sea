@@ -4,6 +4,8 @@ using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 using SendGrid;
 using SendGrid.Helpers.Mail;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace sunandseasplit.Function
 {
@@ -17,9 +19,8 @@ namespace sunandseasplit.Function
         }
 
         [Function("SendEmail")]
-        public HttpResponseData Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public async Task <HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
@@ -27,7 +28,7 @@ namespace sunandseasplit.Function
             string subject = data?.subject;
             string message = data?.text;
 
-            if (string.IsNullOrEmpty(toEmail)  string.IsNullOrEmpty(subject)  string.IsNullOrEmpty(message))
+            if (string.IsNullOrEmpty(toEmail)  || string.IsNullOrEmpty(subject)  || string.IsNullOrEmpty(message))
             {
                 return new BadRequestObjectResult("Please provide all required fields (toEmail, subject, message)");
             }
