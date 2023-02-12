@@ -19,7 +19,7 @@ namespace sunandseasplit.Function
         }
 
         [Function("SendEmail")]
-        public async Task <HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
+        public async Task Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req)
         {
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -28,26 +28,12 @@ namespace sunandseasplit.Function
             string subject = data?.subject;
             string message = data?.text;
 
-            if (string.IsNullOrEmpty(toEmail)  || string.IsNullOrEmpty(subject)  || string.IsNullOrEmpty(message))
-            {
-                return new BadRequestObjectResult("Please provide all required fields (toEmail, subject, message)");
-            }
-
             var apiKey = Environment.GetEnvironmentVariable("SendGrid_ApiKey");
             var client = new SendGridClient(apiKey);
             var from = new EmailAddress("travelagencyx@gmail.com", "Example");
             var to = new EmailAddress(toEmail);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, message, message);
             var response = await client.SendEmailAsync(msg);
-
-            if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
-            {
-                return new OkObjectResult("Email sent successfully.");
-            }
-            else
-            {
-                return new BadRequestObjectResult("Failed to send email.");
-            }
         }
     }
 }
