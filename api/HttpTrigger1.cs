@@ -47,5 +47,6 @@ namespace sunandseasplit.Function
             {
                 return new BadRequestObjectResult("Failed to send email.");
             }
+        }
     }
 }
